@@ -1,4 +1,5 @@
 // Part 1 --------------------------------------------------------------------------------------
+// Document type and define variable
 
 document.getElementById("MHD").innerHTML = "I'm the MHD";
 
@@ -18,6 +19,7 @@ function changeText() {
 
 
 // Part 2 --------------------------------------------------------------------------------------
+// Data types and operators;
 
 // String types
 var str1 = "salaam";
@@ -66,7 +68,7 @@ var string2 = "How are you?";
 var srting3 = str1 + " " + str2; // string3 = "Hello How are you?";
 var string4 = "4" + "12";        // string4 = 412 (a string);
 var number1 = 10 * "5" + 2;      // number1 = 52 (a number);
-var string5 = 10 * "5" + "2";    // string6 = 502 (a string);
+var string5 = 10 * "5" + "2";    // string5 = 502 (a string);
 
 k = 20;
 var t = k > 30? "Yes" : "No";   // t = "No";
@@ -74,6 +76,7 @@ var t = k > 30? "Yes" : "No";   // t = "No";
 
 
 // Part 3 --------------------------------------------------------------------------------------
+// Conditional operators;
 
 var x = prompt("Enter a number (as x): ");  
 // prompt gets a string as input! so x is a string but we can use it as a number!!! WTF:|
@@ -93,7 +96,9 @@ if (y === "20")
     alert("Yes! count and type of y is equal with '20'; \nBoth of them are string;");
 
 if (x >= 10 && x <= 99)  // logic &&(and), ||(or);
-    alert("The entered number have 2 digits;");
+    alert("The entered number has 2 digits;");
+else if (x >= 100 && x <= 999)
+    alert("The entered number has 3 digits;");
 
 if (x > "20")
     alert("Yes it works :));\nComparing a number with a string (with count of them);");
