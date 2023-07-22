@@ -52,14 +52,14 @@ function printNumbers() {
     // While loop;
     var sum = 0, number = "";
     while (true) {
-        number = prompt("Enter a number (* for finish): ");
+        number = prompt("Enter a number (enter * to finish): ");
         if (number == "*")
             break;
         if (number == NaN)
             continue;
         sum += Number(number);
     }
-    document.write("summation is: ", sum);
+    document.writeln("summation is: ", sum); 
 
     // Do-while loop;
     var i = 1;
@@ -73,7 +73,7 @@ function printNumbers() {
     var student = {name: "Mahdi", nickName: "theMHD", stdNo: 40030490};
     for (var x in student)
         text += student[x] += "-";  // it gets x as an string;
-    document.write(text);
+    document.write("<br>", text);   // <br> --> break-line tag;
 }
 
 
