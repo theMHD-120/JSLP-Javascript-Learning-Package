@@ -128,3 +128,17 @@ function submit_data() {
     alert("We can use onsubmit attribute and its own function to validate data before sending to the server;");
     alert("Attention: onsubmit attribute is only exist for <form> tag;")
 }
+
+
+
+// Part 7 ------------------------------------------------------------------------------------------------------------
+// Try-catch;
+
+function trycatch() {
+    try {
+        alertt("System is worked correctly;");
+    } catch (error) {
+        alert("System is not worked!\nServer error: " + error.message);  
+        // error.message --> shows syntax, runtime or another errors ...
+    }
+}

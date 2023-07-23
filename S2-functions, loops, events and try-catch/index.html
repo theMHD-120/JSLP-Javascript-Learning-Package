@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Practice 2</title>
+        <title>Section 2</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
@@ -22,7 +22,7 @@
         <br><br/>
         
         <div>Part 6</div>
-        <input type="text" id="txt1_box" class="txtbox" placeholder="text1" onfocus="txt1_focus();"/>
+        <input type="text" id="txt1_box" class="txtbox" placeholder="text1 (after click reload this page)" onfocus="txt1_focus();"/>
         <input type="text" id="txt2_box" class="txtbox" placeholder="text2" onblur="txt2_unfocus();" onmouseover="txt2_mouseover(this);" onmouseout="txt2_mouseout(this);"/>
         <input type="text" id="txt3_box" class="txtbox" placeholder="text3" onkeyup="txt3_keyup(event);" onkeydown="txt3_keydown(event);" ondblclick="alert('Textbox3 has been double clicked;')"/>
         <span id="counter">0</span>
@@ -31,6 +31,13 @@
             <button type="submit">Click to send data!</button> This button sends data to the server (for example to home_server.js file)
             <div>Note: in this project we don't have any server file so with click top button, we get an error;</div>
         </form>
+
+        <br><br/>
+
+        Part 7
+        <button id="click" onclick="trycatch();">
+            Click here to try the try-catch :)
+        </button>
         
 
         <script type="text/javascript" src="backCode.js" async defer>
