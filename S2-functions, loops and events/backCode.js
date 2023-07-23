@@ -120,7 +120,7 @@ function txt3_keydown(e) {
     */
 
     if (e.keyCode == 56)
-        e.preventDefault();  // it prevents defult event;
+        e.preventDefault();  // it prevents defult action (entering);
     // In this function we want to prevent entering if *(star) character entered;
 }
 

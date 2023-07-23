@@ -1,0 +1,17 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#counter {
+  font-size: large;
+  color: rgb(1, 1, 37);
+  background-color: yellow;
+}
+
+#click {
+  cursor: pointer;
+}
+
+.txtbox {
+  height: 20px;
+}
