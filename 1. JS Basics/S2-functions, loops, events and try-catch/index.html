@@ -22,8 +22,8 @@
         <br><br/>
         
         <div>Part 6</div>
-        <input type="text" id="txt1_box" class="txtbox" placeholder="text1 (after click reload this page)" onfocus="txt1_focus();"/>
-        <input type="text" id="txt2_box" class="txtbox" placeholder="text2" onblur="txt2_unfocus();" onmouseover="txt2_mouseover(this);" onmouseout="txt2_mouseout(this);"/>
+        <input type="text" id="txt1_box" class  ض1="txtbox" placeholder="text1 (after click reload this page)" onfocus="txt1_focus();"/>
+        <input type="text" id="txt2_box" class="txtbox" placeholder="text2" onblur="txt2_unfocus();" onmouseover="txt2_mouseover(this);" onmouseout="this.value = ''; //txt2_mouseout(this);"/>
         <input type="text" id="txt3_box" class="txtbox" placeholder="text3" onkeyup="txt3_keyup(event);" onkeydown="txt3_keydown(event);" ondblclick="alert('Textbox3 has been double clicked;')"/>
         <span id="counter">0</span>
         <button id="click" oncontextmenu="event.preventDefault()">This button can't be clicked by right click of mouse!</button>

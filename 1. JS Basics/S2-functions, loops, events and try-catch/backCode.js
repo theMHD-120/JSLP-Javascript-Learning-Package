@@ -101,7 +101,7 @@ function txt2_mouseout(self) {
 
 function txt3_keyup(e) {
     // alert(e.keyCode);  // keyCode is like ascii code; 
-    counter_text = document.getElementById("counter").innerHTML;
+    var counter_text = document.getElementById("counter").innerHTML;
 
     // Note: keyCode = 8 is keycode of <back space> and keyCode = 13 is keycode of <enter>; 
     if (e.keyCode != 8 && e.keyCode != 13)  
