@@ -22,3 +22,9 @@ var arr = "-213.2485";
 console.log(Number(arr))
 arr = arr.slice(0, -1);
 console.log(arr);
+console.log(Math.floor(3.2));
+
+x = "2.1y3";
+console.log(Number(x));
+console.log(parseFloat(x));
+console.log(eval(x));
