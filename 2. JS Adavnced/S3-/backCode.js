@@ -16,7 +16,12 @@ function changeValue() {
         paragraph[index].style.borderColor = "darkred";
     }
 
-    document.getElementById('img1').src = "dom-tree-js-2.png";
+    // alert(document.getElementById('img1').src) --> it shows bottom address (for dom-tree-js.png);
+    if (document.getElementById('img1').src == "http://127.0.0.1:5500/2.%20JS%20Adavnced/S3-/dom-tree-js.png")
+        document.getElementById('img1').src = "dom-tree-js-2.png";
+    else
+        document.getElementById('img1').src = "dom-tree-js.png";
+    
 }
 
 function childes() {
@@ -70,3 +75,7 @@ function childes() {
 
 // Part 9 ------------------------------------------------------------------------------------------------------------
 // Changing the DOM;
+
+function addNewLinks() {
+    
+}
