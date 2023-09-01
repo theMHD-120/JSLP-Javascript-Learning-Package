@@ -80,7 +80,10 @@ function childes() {
 
 function addNewLinks(flagNumber) { 
     /* 
-    Attention: in this function we work with div tag (with id="comp2");
+    Attention #1: in this function we work with div tag (with id="comp2");
+    Attention #2: 
+        In this function we work with <a>..</a> tag and its attributes (as a link);
+        We can also use all the tags with their attributes;
     Parameters:
         flagNumber:
             1 --> to add a new link after link 2;
@@ -109,5 +112,4 @@ function addNewLinks(flagNumber) {
 
         document.getElementById("comp2").insertBefore(newLink, targets[0]);  // target[0] --> first <a>..</a> tag (link 1);
     }
-    
 }
