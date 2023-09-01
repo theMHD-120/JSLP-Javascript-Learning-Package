@@ -78,23 +78,36 @@ function childes() {
 // Changing the DOM;
 // Changing the HTML file (with change, add or delete some elements) with using js codes;
 
-function addNewLinks() { 
+function addNewLinks(flagNumber) { 
     /* 
     Attention: in this function we work with div tag (with id="comp2");
-    Functions and methods:
+    Parameters:
+        flagNumber:
+            1 --> to add a new link after link 2;
+            2 --> to add a new link before link 1;
+    Functions or methods:
         append: to insert something at end of an element;
-
+        insertBefore: to insert something before an element;
     */
 
     var newLink = document.createElement('a');  // <a>..</a> tag;
+    newLink.href = "#";
 
-    // Method 1 (to add a link in div tag);
-    var newLinkText = document.createTextNode(' Link 3');
+    // Method #1 (to add a link in div tag);
+    var newLinkText = document.createTextNode(' Link 3 ');
     newLink.appendChild(newLinkText);  
 
-    // Method 2;
-    newLink.innerHTML = " Link 3";
+    // Method #2;
+    newLink.innerHTML = " Link 3 ";
 
-    newLink.href = "#";
-    document.getElementById("comp2").appendChild(newLink);
+    if (flagNumber == 1) {
+        document.getElementById("comp2").appendChild(newLink);
+    } else if (flagNumber == 2) {
+        var targets = document.getElementById("comp2").getElementsByTagName("a"); 
+        // Note: var targets = document.getElementsByTagName("a") --> it works (so using getElementById("comp2") is not necessary); but ...
+        // Attention: if we want to use <a>..</a> tags that are only in div tag (with id="comp2"), we should use getElementById("comp2"); Ok? :)
+
+        document.getElementById("comp2").insertBefore(newLink, targets[0]);  // target[0] --> first <a>..</a> tag (link 1);
+    }
+    
 }

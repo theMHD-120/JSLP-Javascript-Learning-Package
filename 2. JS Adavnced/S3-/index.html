@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta lang="eng" dir="ltr">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Section 3</title>
         <meta name="description" content="">
@@ -22,10 +23,11 @@
         <img id="img1" src="dom-tree-js.png" />
 
         <div id="part_name">||| Part 9 |||</div>
-        <input type="button" value="Click to add link" onclick="addNewLinks();" />
+        <input type="button" value="Click to add link (before)" onclick="addNewLinks(2);" />
+        <input type="button" value="Click to add link (after)" onclick="addNewLinks(1);" />
         <div id="comp2">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
+            <a id="link" href="#">Link 1</a>
+            <a id="link" href="#">Link 2</a>
         </div>
 
         <script type="text/javascript" src="backCode.js" async defer>
