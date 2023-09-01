@@ -76,7 +76,7 @@ function childes() {
 
 // Part 9 ------------------------------------------------------------------------------------------------------------
 // Changing the DOM;
-// Changing the HTML file (with change, add or delete some elements) with using js codes;
+// Changing the HTML file (with change, add or remove some elements) with using js codes;
 
 function addNewLinks(flagNumber) { 
     /* 
@@ -112,4 +112,23 @@ function addNewLinks(flagNumber) {
 
         document.getElementById("comp2").insertBefore(newLink, targets[0]);  // target[0] --> first <a>..</a> tag (link 1);
     }
+}
+
+function removeLinks () {
+    /* 
+    Attention #1: in this function we work with div tag (with id="comp2");
+    Attention #2: 
+        In this function we work with <a>..</a> tag and its attributes (as a link);
+        We can also use all the tags with their attributes;
+    Parameters:
+        flagNumber:
+            1 --> to add a new link after link 2;
+            2 --> to add a new link before link 1;
+    Functions or methods:
+        
+    */
+
+    var parentElemnt = document.getElementById("comp2");
+    var children = parentElemnt.getElementsByTagName("a");
+    parentElemnt.removeChild(children[0]);
 }
