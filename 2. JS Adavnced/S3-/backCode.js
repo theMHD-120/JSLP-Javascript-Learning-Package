@@ -24,7 +24,7 @@ function changeValue() {
 }
 
 function childes() {
-    // Attention: in this function we work with div tag (with id="comp1");
+    // Attention: in this function we work with div tag (with id="comp1") and its chilren tags;
 
     alert(document.getElementById("comp1"));                    // a node (a HTML tag --> div with id="comp1");
     alert(document.getElementById("comp1").childNodes);         // an array of children of above node (inner <p>..</p> tags and ...);
@@ -80,7 +80,7 @@ function childes() {
 
 function addNewLinks(flagNumber) { 
     /* 
-    Attention #1: in this function we work with div tag (with id="comp2");
+    Attention #1: in this function we work with div tag (with id="comp2") and its chilren tags;
     Attention #2: 
         In this function we work with <a>..</a> tag and its attributes (as a link);
         We can also use all the tags with their attributes;
@@ -89,8 +89,9 @@ function addNewLinks(flagNumber) {
             1 --> to add a new link after link 2;
             2 --> to add a new link before link 1;
     Functions or methods:
-        append: to insert something at end of an element;
-        insertBefore: to insert something before an element;
+        append: to insert an element at end of an element;
+        insertBefore: to insert an element before an element;
+        replaceChild: to replace an element with a child of an element;
     */
 
     var newLink = document.createElement('a');  // <a>..</a> tag;
@@ -108,9 +109,15 @@ function addNewLinks(flagNumber) {
     } else if (flagNumber == 2) {
         var targets = document.getElementById("comp2").getElementsByTagName("a"); 
         // Note: var targets = document.getElementsByTagName("a") --> it works (so using getElementById("comp2") is not necessary); but ...
-        // Attention: if we want to use <a>..</a> tags that are only in div tag (with id="comp2"), we should use getElementById("comp2"); Ok? :)
+        // Attention: if we want to use <a>..</a> tags that are only in div tag (with id="comp2"), using getElementById("comp2") is necessary;
 
         document.getElementById("comp2").insertBefore(newLink, targets[0]);  // target[0] --> first <a>..</a> tag (link 1);
+        /*
+        A new method:
+        document.getElementById("comp2").replaceChild(newLink, targets[0]);  
+        What is replaceChild method? to replace a child (targets[0] --> link 1) with a new child (newLink --> link 3); 
+        You can try this :);
+        */
     }
 }
 
@@ -120,15 +127,11 @@ function removeLinks () {
     Attention #2: 
         In this function we work with <a>..</a> tag and its attributes (as a link);
         We can also use all the tags with their attributes;
-    Parameters:
-        flagNumber:
-            1 --> to add a new link after link 2;
-            2 --> to add a new link before link 1;
     Functions or methods:
-        
+        removeChild: to remove a child of an element;
     */
 
     var parentElemnt = document.getElementById("comp2");
     var children = parentElemnt.getElementsByTagName("a");
-    parentElemnt.removeChild(children[0]);
+    parentElemnt.removeChild(children[0]);  // to remove the first child;
 }
