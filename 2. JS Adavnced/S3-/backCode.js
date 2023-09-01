@@ -76,9 +76,25 @@ function childes() {
 
 // Part 9 ------------------------------------------------------------------------------------------------------------
 // Changing the DOM;
-// Changing the HTML file (with change, add or delete some tags) with using js codes;
+// Changing the HTML file (with change, add or delete some elements) with using js codes;
 
 function addNewLinks() { 
+    /* 
+    Attention: in this function we work with div tag (with id="comp2");
+    Functions and methods:
+        append: to insert something at end of an element;
+
+    */
+
     var newLink = document.createElement('a');  // <a>..</a> tag;
-    
+
+    // Method 1 (to add a link in div tag);
+    var newLinkText = document.createTextNode('Link 3');
+    newLink.appendChild(newLinkText);  
+
+    // Method 2;
+    newLink.innerHTML = "Link 3";
+
+    newLink.href = "#";
+    document.getElementById("comp2").appendChild(newLink);
 }
