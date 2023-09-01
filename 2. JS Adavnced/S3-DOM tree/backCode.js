@@ -97,7 +97,7 @@ function addNewLinks(flagNumber) {
     var newLink = document.createElement('a');  // <a>..</a> tag;
     newLink.href = "#";
 
-    // Method #1 (to add a link in div tag);
+    // Method #1 (to add a new link (element) in div tag);
     var newLinkText = document.createTextNode(' Link 3 ');
     newLink.appendChild(newLinkText);  
 
@@ -111,7 +111,7 @@ function addNewLinks(flagNumber) {
         // Note: var targets = document.getElementsByTagName("a") --> it works (so using getElementById("comp2") is not necessary); but ...
         // Attention: if we want to use <a>..</a> tags that are only in div tag (with id="comp2"), using getElementById("comp2") is necessary;
 
-        document.getElementById("comp2").insertBefore(newLink, targets[0]);  // target[0] --> first <a>..</a> tag (link 1);
+        document.getElementById("comp2").insertBefore(newLink, targets[0]);  // targets[0] --> first <a>..</a> tag (link 1);
         
         /*
         A new method:
@@ -140,9 +140,9 @@ function removeLinks () {
         removeChild: to remove a child of an element;
     */
 
-    var parentElemnt = document.getElementById("comp2");
-    var children = parentElemnt.getElementsByTagName("a");
-    parentElemnt.removeChild(children[0]);  // to remove the first child (first <a>..</a> tag);
+    var parentElmnt = document.getElementById("comp2");
+    var children = parentElmnt.getElementsByTagName("a");
+    parentElmnt.removeChild(children[0]);  // to remove the first child (first <a>..</a> tag);
 }
 
 function htmlAndBody() {
