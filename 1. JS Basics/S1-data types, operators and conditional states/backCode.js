@@ -21,7 +21,7 @@ function changeText() {
 // Part 2 --------------------------------------------------------------------------------------
 // Data types and operators;
 
-// String types
+// String types ('' or "" --> no difference)
 var str1 = "salaam";
 var str2 = "salaam 'khoobi' ?";
 var str3 = 'salaam "khoobi" ?';

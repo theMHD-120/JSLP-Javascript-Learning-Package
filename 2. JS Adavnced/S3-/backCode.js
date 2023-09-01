@@ -1,7 +1,6 @@
 // Part 8 ------------------------------------------------------------------------------------------------------------
 // Document Object Model (DOM) Tree; 
-
-// Attention: every tags are known as a node (in the DOM tree);
+// What is the logic of DOM? every tags are known as a node (a node in the DOM tree :);
 
 function changeValue() {
     // document.getElementById("comp1").innerHTML = "somthing on the way";
@@ -64,10 +63,12 @@ function childes() {
     alert(document.getElementById("comp1").firstChild.nextSibling.nodeType);   // 1;
     /*
     Note: what is the Type? it's just a number :) ...
-    Types number: elementNodes --> 1 (tags);
-    attrabuteNodes --> 2 (src, value, title, type and ... (tag attributes));
-    textNodes --> 3 (texts);
-    commentNodes --> 8 / documentNode --> 9;
+    Types number: 
+    elementNodes   -->  1 (tags);
+    attrabuteNodes -->  2 (src, value, title, type and ... (tag attributes));
+    textNodes      -->  3 (texts);
+    commentNodes   -->  8 (<!--somthing-->);
+    documentNode   -->  9 (the ROOT node (parent of all nodes));
     */
 }
 
@@ -75,7 +76,9 @@ function childes() {
 
 // Part 9 ------------------------------------------------------------------------------------------------------------
 // Changing the DOM;
+// Changing the HTML file (with change, add or delete some tags) with using js codes;
 
-function addNewLinks() {
+function addNewLinks() { 
+    var newLink = document.createElement('a');  // <a>..</a> tag;
     
 }
