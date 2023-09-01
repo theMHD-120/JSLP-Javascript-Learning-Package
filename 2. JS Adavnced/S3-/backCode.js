@@ -89,11 +89,11 @@ function addNewLinks() {
     var newLink = document.createElement('a');  // <a>..</a> tag;
 
     // Method 1 (to add a link in div tag);
-    var newLinkText = document.createTextNode('Link 3');
+    var newLinkText = document.createTextNode(' Link 3');
     newLink.appendChild(newLinkText);  
 
     // Method 2;
-    newLink.innerHTML = "Link 3";
+    newLink.innerHTML = " Link 3";
 
     newLink.href = "#";
     document.getElementById("comp2").appendChild(newLink);
