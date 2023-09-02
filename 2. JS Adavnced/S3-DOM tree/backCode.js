@@ -89,9 +89,9 @@ function addNewLinks(flagNumber) {
             1 --> to add a new link after link 2;
             2 --> to add a new link before link 1;
     Functions or methods:
-        append: to insert an element at end of an element;
-        insertBefore: to insert an element before an element;
-        replaceChild: to replace an element with a child of an element;
+        append: to insert an element at end of an existed element;
+        insertBefore: to insert an element before an existed element;
+        replaceChild: to replace an element with a child of an existed element;
     */
 
     var newLink = document.createElement('a');  // <a>..</a> tag;
