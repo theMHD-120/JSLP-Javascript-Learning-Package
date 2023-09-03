@@ -11,6 +11,7 @@ function stringObject() {
         4. charCodeAt, to get ascii code of above character; 
         5. concat, to concatinate some (infinite) strings to a string;
         6. indexOf, to get index of a character (or first index of a sub string) in a string;
+        7. lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
     */
 
     var txt1 = "Hi; How are you?";
@@ -45,6 +46,21 @@ function stringObject() {
                 alert(txt1.indexOf("are"));  // returns <8>, index of first character --> <a>;
                 alert(txt1.indexOf("aer"));  // <aer> doesn't exist in txt1; So it returns <-1>;
     */
+
+    alert("From the last index, <o> is in index:\n" + txt1.lastIndexOf("o"));
+    alert("From the first index (index 0) to the index 13 (14th character), <o> is in index:\n" + txt1.lastIndexOf("o", 13));
+    alert("From the first index (index 0) to the index 12 (13th character), <o> is in index:\n" + txt1.lastIndexOf("o", 12));
+    alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"));
+    /*
+        Like indexOf, if a character or a sub string did not found, lastIndexOf returns <-1>;
+        You can try some examples yourself :);
+        ---
+        Attention: 
+            lastIndexOf starts checking from the end ...
+            But reports index from the beginning (index 0):);
+    */
+
+
 
 
     function programmer(name, nickName, pLang) {
