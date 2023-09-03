@@ -59,7 +59,7 @@ function stringObject() {
         You can try some examples yourself :);
         ---
         Special attention: 
-            lastIndexOf starts checking from the end ...
+            lastIndexOf starts searching from the end ...
             But reports index from the beginning (index 0):);
             ---
             indexOf: from an index to the end ([index:] in python);
