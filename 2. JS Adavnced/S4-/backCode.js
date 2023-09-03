@@ -24,7 +24,7 @@ function stringObject() {
 
     var txt2 = "\nWhats up?";                                                        // #5;
     alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            
-    alert("Attention: txt1 did not change ...\n" + "Now, txt1 is:\n" + txt1);
+    alert("Attention: txt1 not changed ...\n" + "Now, txt1 is:\n" + txt1);
     /*
         To change txt1, you should use assignment (see bottom):
         txt1 = txt1.concat("\n-Thanks;", " I'm fine;", txt2);
@@ -55,9 +55,17 @@ function stringObject() {
         Like indexOf, if a character or a sub string did not found, lastIndexOf returns <-1>;
         You can try some examples yourself :);
         ---
-        Attention: 
+        Special attention: 
             lastIndexOf starts checking from the end ...
             But reports index from the beginning (index 0):);
+            ---
+            indexOf: from an index to the end ([index:] in python);
+            lastIndexOf: from the first index (index 0) to an index ([:index+1] in python);
+            Note: 
+                Why index+1? 
+                In python, if we use [:4] --> we access to the characters at indexes 0, 1, 2 and 3;
+                But here, if we use lastIndexOf(..., 4) --> we can access to the index 4 (plus the above indexes);
+                In python, if we use [:5], we access to the indexes 0, 1, 2, 3 and 4; 
     */
 
 
