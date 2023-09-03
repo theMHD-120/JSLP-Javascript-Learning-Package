@@ -80,8 +80,6 @@ function stringObject() {
 
 
 
-
-
     function programmer(name, nickName, pLang) {
         /*
         What is the <this>?
