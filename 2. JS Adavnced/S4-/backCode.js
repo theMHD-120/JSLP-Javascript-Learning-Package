@@ -18,10 +18,11 @@ function stringObject() {
     alert("Length of txt1 is:\n" + txt1.length);                                     // #1;
     alert("The constructor of txt1 is:\n" + txt1.constructor);                       // #2;
     alert("The 5th character (index 4) is:\n" + txt1.charAt(4));                     // #3;
-    alert("The ascii code of fifth charator (index 4) is:\n" + txt1.charCodeAt(4));  // #4;
+    alert("The ascii code of fifth charator (index 4) is:\n"                         // #4;
+        + txt1.charCodeAt(4));  
 
-    var txt2 = "\nWhats up?";
-    alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            // #5;
+    var txt2 = "\nWhats up?";                                                        // #5;
+    alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            
     alert("Attention: txt1 did not change ...\n" + "Now, txt1 is:\n" + txt1);
     /*
         To change txt1, you should use assignment (see bottom):
@@ -32,13 +33,18 @@ function stringObject() {
     alert("With starting from index 10 (11th character), <o> is in the\n" 
         + txt1.indexOf("o", 10));  // in <you> (<o> is in index 13);
     /* 
-        If a character does not found in our string, indexOf returns <-1>;
-        You can try these two examples:
-            alert(txt1.indexOf("O"));  // <O> does not exist in txt1;
-            alert("With starting from index 14 (15th character), <o> is in the\n" 
-                + txt1.indexOf("o", 14));  // returns <-1>;
+        Note #1:
+            If a character does not found in our string, indexOf returns <-1>;
+            You can try these two examples:
+                alert(txt1.indexOf("O"));  // <O> does not exist in txt1;
+                alert("With starting from index 14 (15th character), <o> is in the\n" 
+                    + txt1.indexOf("o", 14));  // returns <-1>;
+        Note #2:
+            Also, we can find the first index of a sub string;
+            You can try these two examples:
+                alert(txt1.indexOf("are"));  // returns <8>, index of first character --> <a>;
+                alert(txt1.indexOf("aer"));  // <aer> doesn't exist in txt1; So it returns <-1>;
     */
-    
 
 
     function programmer(name, nickName, pLang) {
