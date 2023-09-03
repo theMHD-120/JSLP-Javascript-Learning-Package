@@ -64,11 +64,15 @@ function stringObject() {
             ---
             indexOf: from an index to the end ([index:] in python);
             lastIndexOf: from the first index (index 0) to an index ([:index+1] in python);
-            Note: 
+            Note #1: 
                 Why index+1? 
                 In python, if we use [:4] --> we access to the characters at indexes 0, 1, 2 and 3;
                 But here, if we use lastIndexOf(..., 4) --> we can access to the index 4 (plus the above indexes);
-                In python, if we use [:5], we access to the indexes 0, 1, 2, 3 and 4; 
+                In python, if we use [:5], we access to the indexes 0, 1, 2, 3 and 4;
+            Note #2:
+                Consider, lastIndexOf(...,index) slightly different from [:index+1] in python :);
+                What different? lastIndexOf(...,index) returns the last character before index+1 not the first character;
+                 
 
         Think about this example and try it:
             alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 8);
@@ -78,7 +82,7 @@ function stringObject() {
             alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 7);
     */
 
-
+    // #8;
 
     function programmer(name, nickName, pLang) {
         /*
@@ -104,8 +108,8 @@ function stringObject() {
     How? with add new properties;
     See bottom:
     */
-    programmer.prototype.age = null;
-    programmer1.age = 20;  // 20 saves as string ("20");
+    programmer.prototype.age = null;  // age added as a new property;
+    programmer1.age = 20;             // 20 saves as a string ("20");
     alert("The age of programmer1 is:\n" + programmer1.age);
 
 
