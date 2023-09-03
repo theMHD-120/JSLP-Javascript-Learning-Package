@@ -16,13 +16,13 @@ function stringObject() {
 
     var txt1 = "Hi; How are you?";
     alert("The txt1 is:\n" + txt1);
-    alert("Length of txt1 is:\n" + txt1.length);                                     // #1;
-    alert("The constructor of txt1 is:\n" + txt1.constructor);                       // #2;
-    alert("The 5th character (index 4) is:\n" + txt1.charAt(4));                     // #3;
-    alert("The ascii code of fifth charator (index 4) is:\n"                         // #4;
+    alert("Length of txt1 is:\n" + txt1.length);                                                    // #1;
+    alert("The constructor of txt1 is:\n" + txt1.constructor);                                      // #2;
+    alert("The 5th character (index 4) is:\n" + txt1.charAt(4));                                    // #3;
+    alert("The ascii code of fifth charator (index 4) is:\n"                                        // #4;
         + txt1.charCodeAt(4));  
 
-    var txt2 = "\nWhats up?";                                                        // #5;
+    var txt2 = "\nWhats up?";                                                                       // #5;
     alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            
     alert("Attention: txt1 not changed ...\n" + "Now, txt1 is:\n" + txt1);
     /*
@@ -30,7 +30,7 @@ function stringObject() {
         txt1 = txt1.concat("\n-Thanks;", " I'm fine;", txt2);
     */
 
-    alert("<o> is in index:\n" + txt1.indexOf("o"));  // in <How>;                   // #6;
+    alert("<o> is in index:\n" + txt1.indexOf("o"));  // in <How>;                                   // #6;
     alert("With starting from index 10 (11th character), <o> is in the\n" 
         + txt1.indexOf("o", 10));  // in <you> (<o> is in index 13);
     /* 
@@ -47,10 +47,13 @@ function stringObject() {
                 alert(txt1.indexOf("aer"));  // <aer> doesn't exist in txt1; So it returns <-1>;
     */
 
-    alert("From the last index, <o> is in index:\n" + txt1.lastIndexOf("o"));
-    alert("From the first index (index 0) to the index 13 (14th character), <o> is in index:\n" + txt1.lastIndexOf("o", 13));
-    alert("From the first index (index 0) to the index 12 (13th character), <o> is in index:\n" + txt1.lastIndexOf("o", 12));
-    alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"));
+    alert("From the last index, <o> is in index:\n" + txt1.lastIndexOf("o"));                        // #7;
+    alert("From the first index (index 0) to the index 13 (14th character), <o> is in index:\n"
+        + txt1.lastIndexOf("o", 13));
+    alert("From the first index (index 0) to the index 12 (13th character), <o> is in index:\n"
+        + txt1.lastIndexOf("o", 12));
+    alert("From the last index, The first index of <are> --> <a> is in index:\n" 
+        + txt1.lastIndexOf("are"));
     /*
         Like indexOf, if a character or a sub string did not found, lastIndexOf returns <-1>;
         You can try some examples yourself :);
@@ -66,7 +69,15 @@ function stringObject() {
                 In python, if we use [:4] --> we access to the characters at indexes 0, 1, 2 and 3;
                 But here, if we use lastIndexOf(..., 4) --> we can access to the index 4 (plus the above indexes);
                 In python, if we use [:5], we access to the indexes 0, 1, 2, 3 and 4; 
+
+        Think about this example and try it:
+            alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 8);
+            What will be returned? ...
+        
+        What do you think about this?
+            alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 7);
     */
+
 
 
 
