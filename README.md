@@ -5,4 +5,4 @@
 Learning javascript with javascript codes :)
 This package contains two parts and serveral sections;
 
-Pre reqerements:
+Prerequisites:
