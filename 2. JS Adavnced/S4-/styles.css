@@ -14,21 +14,3 @@ input {
   margin-bottom: 10px;
   color: darkviolet;
 }
-
-#paragraph {
-  width: 150px;
-}
-
-#img_description {
-  font-size: 20px;
-  color: darkblue;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-#img1 {
-  margin-top: 10px;
-}
-
-#link {
-  background-color: aqua;
-}
