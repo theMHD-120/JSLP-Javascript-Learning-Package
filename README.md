@@ -1,6 +1,6 @@
 ﻿In the name of ALLAH
 
-Author :  seyed mahdi mahdavi mortazavi (theMHD)
+Author:  seyed mahdi mahdavi mortazavi (theMHD)
 # Javascript-learning-package
 ||| JS with JS |||
 
