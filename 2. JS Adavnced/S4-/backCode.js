@@ -211,4 +211,4 @@ function stringObject() {
 
 
 // Part 11 ------------------------------------------------------------------------------------------------------------
-// JavaScript Objects - String;
+// JavaScript Objects - Date;
