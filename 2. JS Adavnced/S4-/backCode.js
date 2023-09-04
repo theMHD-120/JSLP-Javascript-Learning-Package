@@ -5,16 +5,16 @@ function stringObject() {
 
     /*
     Learning about some String methods:
-        1. length, to get length of a string;
-        2. constructor, to get constructor of a string;
-        3. charAt, to get character of a string index;
-        4. charCodeAt, to get ascii code of above character; 
-        5. concat, to concatinate some (infinite) strings to a string;
-        6. indexOf, to get index of a character (or first index of a sub string) in a string;
-        7. lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
-        8. replace, to replace an existing character or substring with another characters or substrings;
-        9. search, just like indexOf :);
-        10. slice, 
+        1.  length, to get length of a string;
+        2.  constructor, to get constructor of a string;
+        3.  charAt, to get character of a string index;
+        4.  charCodeAt, to get ascii code of above character; 
+        5.  concat, to concatinate some (infinite) strings to a string;
+        6.  indexOf, to get index of a character (or first index of a sub string) in a string;
+        7.  lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
+        8.  replace, to replace an existing character or substring with another characters or substrings;
+        9.  search, just like indexOf :);
+        10. slice, to get a substring from a string (from one index to another index);
     */
 
     var txt1 = "Hi; How are you?";
@@ -25,6 +25,7 @@ function stringObject() {
     alert("The ascii code of fifth charator (index 4) is:\n"                                        // #4;
         + txt1.charCodeAt(4));  
 
+
     var txt2 = "\nWhats up?";                                                                       // #5;
     alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            
     alert("Attention: txt1 not changed ...\n" + "Now, txt1 is:\n" + txt1);
@@ -32,6 +33,7 @@ function stringObject() {
         To change txt1, we should use assignment (see bottom):
         txt1 = txt1.concat("\n-Thanks;", " I'm fine;", txt2);
     */
+
 
     alert("<o> is in index:\n" + txt1.indexOf("o"));  // in <How>;                                   // #6;
     alert("With starting from index 10 (11th character), <o> is in the\n" 
@@ -49,6 +51,7 @@ function stringObject() {
                 alert(txt1.indexOf("are"));  // returns <8>, index of first character --> <a>;
                 alert(txt1.indexOf("aer"));  // <aer> doesn't exist in txt1; So it returns <-1>;
     */
+
 
     alert("From the last index, <o> is in index:\n" + txt1.lastIndexOf("o"));                        // #7;
     alert("From the first index (index 0) to the index 13 (14th character), <o> is in index:\n"
@@ -85,6 +88,7 @@ function stringObject() {
             alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 7);
     */
 
+
     alert("New txt1 (with replace <o> with <O>) is:\n" + txt1.replace("o", "O"));                    // #8;
     alert("New txt1 (with replace < you> with <-they>) is:\n" + txt1.replace(" you", "-they"));
     alert("If first character or word does not exist, we get:\n" + txt1.replace("y ou", "-they"));
@@ -94,6 +98,13 @@ function stringObject() {
         ---
         Like concat, To change txt1, we should use assignment (txt1 = txt1.replace(...,...));
     */
+
+
+    alert("A substring from txt1 (index 0 (1st character) to index 5 (6th character)):\n"           // #10;
+        + txt1.slice(0, 6)); 
+    alert("A substring from txt1 (index 5 (6th character) to index 12 (13th character)):\n"           
+        + txt1.slice(5, 13)); 
+
 
     function programmer(name, nickName, pLang) {
         /*
