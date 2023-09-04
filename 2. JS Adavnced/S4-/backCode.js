@@ -16,6 +16,9 @@ function stringObject() {
         9.  search, just like indexOf :);
         10. slice, to get a substring from a string (from one index to another index);
         11. split, to split a string with an existing character (space, comma or ...);
+        12. substring, to get a substring of a string between two indexes (the substr method has expired);
+        13. toUpperCase, convert alphabetic characters to their uppercase letter;
+        14. toLowerCase, convert alphabetic characters to their lowecase letter;
     */
 
     var txt1 = "Hi; How are you?";
@@ -105,22 +108,44 @@ function stringObject() {
         + txt1.slice(0, 6)); 
     alert("A substring from txt1 (index 5 (6th character) to index 12 (13th character)):\n"           
         + txt1.slice(5, 13)); 
-    // Just like python --> txt1.slice(5, 13) ~ txt1[5:13];
-
-
-    var txt1Array = txt1.split(" ");                                                               // #11;
+    /*
+        Just like python:
+            txt1.slice(5, 13) ~ txt1[5:13] , txt1.slice(5) ~ txt1[5:] (from index 5 to the end);
+    */
+    
+            
+    var txt1Array = txt1.split(" ");                                                                // #11;
+    var txt1Array2 = txt1.split(" ", 2);  // 2 is length of array;                                                            
     alert("An array by splitting txt1 by the white spaces:\n" + txt1Array);
     alert("Legth of obtained array:\n" + txt1Array.length);
     alert("third element of obtained array:\n" + txt1Array[2]);
+    alert("An array by splitting txt1 by the white spaces with length = 2:\n" + txt1Array2);
     /*
-        Obtained array:
-            txt1Array[0] --> "Hi;";
-            txt1Array[1] --> "how";
-            txt1Array[2] --> "are";
-            txt1Array[3] --> "you?";
-    */
-    
+        Obtained arrays:
+            txt1Array[0]  --> "Hi;";
+            txt1Array[1]  --> "how";
+            txt1Array[2]  --> "are";
+            txt1Array[3]  --> "you?";
 
+            txt1Array2[0]  --> "Hi;";
+            txt1Array2[1]  --> "how";
+    */
+
+
+    alert("Substring of txt1 between index 3 and index 10 is:\n" + txt1.substring(3, 10));          // #12;
+    /*
+        Attention: 
+            Returns characters between index 3 and index 10;
+            Doesn't return character of index 3 and index 10;
+    */
+
+
+    alert("txt1 with uppercase alphabets:\n" + txt1.toUpperCase());                                 // #13;
+    alert("txt1 with lowercase alphabets:\n" + txt1.toLowerCase());                                 // #14;
+    /*                            
+        Like concat and slice, To change txt1, we should use assignment;
+        txt1 = txt1.toUpperCase()  or  txt1 = txt1.toLowerCase();
+    */
 
     function programmer(name, nickName, pLang) {
         /*
