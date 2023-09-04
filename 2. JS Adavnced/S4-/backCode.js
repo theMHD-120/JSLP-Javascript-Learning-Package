@@ -15,6 +15,7 @@ function stringObject() {
         8.  replace, to replace an existing character or substring with another characters or substrings;
         9.  search, just like indexOf :);
         10. slice, to get a substring from a string (from one index to another index);
+        11. split, to split a string with an existing character (space, comma or ...);
     */
 
     var txt1 = "Hi; How are you?";
@@ -107,7 +108,18 @@ function stringObject() {
     // Just like python --> txt1.slice(5, 13) ~ txt1[5:13];
 
 
-    // #11;
+    var txt1Array = txt1.split(" ");                                                               // #11;
+    alert("An array by splitting txt1 by the white spaces:\n" + txt1Array);
+    alert("Legth of obtained array:\n" + txt1Array.length);
+    alert("third element of obtained array:\n" + txt1Array[2]);
+    /*
+        Obtained array:
+            txt1Array[0] --> "Hi;";
+            txt1Array[1] --> "how";
+            txt1Array[2] --> "are";
+            txt1Array[3] --> "you?";
+    */
+    
 
 
     function programmer(name, nickName, pLang) {
