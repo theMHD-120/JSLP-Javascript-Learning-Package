@@ -21,10 +21,16 @@ function stringObject() {
         14. toLowerCase, convert alphabetic characters to their lowecase letter;
 
     Wrapper methods (they are used to make html tags with our string):
-        1.  anchor, to put a string in <a>..</a> tag and mark them  (expired);
-        2.  big, to put a string in a <big>..</big> tag             (expired);
-        3.  bold, to put a string in a <b>..</b> tag                (expired);
-        4.  italics, to put a string in a <i>..</i> tag             (expired);
+        THEY ARE ALL EXPIRED !!!
+        1.  anchor, to put a string in the <a>..</a> (anchor) tag and mark it;       
+        2.  big, to put a string in the <big>..</big> tag;          
+        3.  bold, to put a string in the <b>..</b> tag;                          
+        4.  italics, to put a string in the <i>..</i> tag;                       
+        5.  link, to make a link with a string (put string in the <a>..</a> tag);
+        6.  small, to put a string in the <small>..</small> tag;  
+        7.  strike, to put a string in the <strike>..</strike> tag; 
+        8.  sub, to put a string in the <sub>..</sub> tag;
+        9.  sup, to put a string in the <sup>..</sup> tag;
     */
 
         
@@ -155,15 +161,24 @@ function stringObject() {
     */
 
 
-    // Wrapper methods ------------------------------------------------------ 
-    var txt3 = "Hello";
+    // Wrapper methods (they are all expired) ----------------------------------------------
+    var txt3 = "theMHD-github";
     alert(txt3.anchor(''));
     alert(txt3.big());
     alert(txt3.bold());
     alert(txt3.italics());
-    alert(document.write(txt3.link("https://github.com/theMHD-120")));
+    document.write(txt3.link("https://github.com/theMHD-120"));
+    alert(txt3.small());
+    alert(txt3.strike());
+    alert(txt3.sub());
+    alert(txt3.sup());
+    /*
+        As you can see, all these methods have expired;
+        You can check them to remember the html tags and their function;
+    */
 
 
+    // Object functions in JavaScript (like classes in other languages) --------------------
     function programmer(name, nickName, pLang) {
         /*
         What is the <this>?
@@ -191,6 +206,9 @@ function stringObject() {
     programmer.prototype.age = null;  // age added as a new property;
     programmer1.age = 20;             // 20 saves as a string ("20");
     alert("The age of programmer1 is:\n" + programmer1.age);
-
-
 }
+
+
+
+// Part 11 ------------------------------------------------------------------------------------------------------------
+// JavaScript Objects - String;
