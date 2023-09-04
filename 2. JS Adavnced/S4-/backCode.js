@@ -104,6 +104,10 @@ function stringObject() {
         + txt1.slice(0, 6)); 
     alert("A substring from txt1 (index 5 (6th character) to index 12 (13th character)):\n"           
         + txt1.slice(5, 13)); 
+    // Just like python --> txt1.slice(5, 13) ~ txt1[5:13];
+
+
+    // #11;
 
 
     function programmer(name, nickName, pLang) {
