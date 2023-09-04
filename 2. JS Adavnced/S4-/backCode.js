@@ -19,8 +19,15 @@ function stringObject() {
         12. substring, to get a substring of a string between two indexes (the substr method has expired);
         13. toUpperCase, convert alphabetic characters to their uppercase letter;
         14. toLowerCase, convert alphabetic characters to their lowecase letter;
+
+    Wrapper methods (they are used to make html tags with our string):
+        1.  anchor, to put a string in <a>..</a> tag and mark them  (expired);
+        2.  big, to put a string in a <big>..</big> tag             (expired);
+        3.  bold, to put a string in a <b>..</b> tag                (expired);
+        4.  italics, to put a string in a <i>..</i> tag             (expired);
     */
 
+        
     var txt1 = "Hi; How are you?";
     alert("The txt1 is:\n" + txt1);
     alert("Length of txt1 is:\n" + txt1.length);                                                    // #1;
@@ -146,6 +153,16 @@ function stringObject() {
         Like concat and slice, To change txt1, we should use assignment;
         txt1 = txt1.toUpperCase()  or  txt1 = txt1.toLowerCase();
     */
+
+
+    // Wrapper methods ------------------------------------------------------ 
+    var txt3 = "Hello";
+    alert(txt3.anchor(''));
+    alert(txt3.big());
+    alert(txt3.bold());
+    alert(txt3.italics());
+    alert(document.write(txt3.link("https://github.com/theMHD-120")));
+
 
     function programmer(name, nickName, pLang) {
         /*
