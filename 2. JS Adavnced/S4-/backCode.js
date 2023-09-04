@@ -194,6 +194,15 @@ function stringObject() {
         this.pLang = pLang;  // programming language;
     }
 
+    /*
+    How can we use from objects in JavaScript?
+        var <a name for our object> = new <object name>(something here);
+        for exmple:
+            var arr1 = new Array(...);  --> to make an array object;
+            var str1 = new String(...); --> to make a string object;
+            var date1 = new Date();     --> to make a date object;
+            and etc ...
+    */
     var programmer1 = new programmer("Seyed mahdi", "theMHD", "JavaScript");
     alert("The name of programmer1 is:\n" + programmer1.name);
     alert("The nickname of programmer1 is:\n" + programmer1.nickName);
