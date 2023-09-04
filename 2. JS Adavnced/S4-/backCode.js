@@ -12,6 +12,7 @@ function stringObject() {
         5. concat, to concatinate some (infinite) strings to a string;
         6. indexOf, to get index of a character (or first index of a sub string) in a string;
         7. lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
+        8. replace, to replace an existing character or substring with another characters or substrings;
     */
 
     var txt1 = "Hi; How are you?";
@@ -82,7 +83,13 @@ function stringObject() {
             alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 7);
     */
 
-    // #8;
+    alert("New txt1 (with replace <o> with <O>) is:\n" + txt1.replace("o", "O"));                    // #8;
+    alert("New txt1 (with replace < you> with <-they>) is:\n" + txt1.replace(" you", "-they"));
+    alert("If first character or word does not exist, we get:\n" + txt1.replace("y ou", "-they"));
+    /*
+        Note #1: as you saw, just the first <o> changed with <O> in the first state;
+        Note #2: as you saw, we did not have any changes in the last state :);
+    */
 
     function programmer(name, nickName, pLang) {
         /*
