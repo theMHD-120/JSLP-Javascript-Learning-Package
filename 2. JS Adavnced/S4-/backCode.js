@@ -162,19 +162,20 @@ function stringObject() {
 
 
     // Wrapper methods (they are all expired) ----------------------------------------------
-    var txt3 = "theMHD-github";
+    var txt3 = "Section 4";
     alert(txt3.anchor('sm.mahdavi'));
     alert(txt3.big());
     alert(txt3.bold());
     alert(txt3.italics());
-    document.write(txt3.link("https://github.com/theMHD-120"));
+    document.write(txt3.link("http://127.0.0.1:5500/2.%20JS%20Adavnced/S4-/index.html"));
+    document.write("<br />Click on the above link to return to the main page...");
     alert(txt3.small());
     alert(txt3.strike());
     alert(txt3.sub());
     alert(txt3.sup());
     /*
         As you can see, all these methods have expired;
-        You can check them to remember the html tags and their function;
+        You can check them to remind the html tags and their function;
     */
 
 
