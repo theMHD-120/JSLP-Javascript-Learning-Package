@@ -163,7 +163,7 @@ function stringObject() {
 
     // Wrapper methods (they are all expired) ----------------------------------------------
     var txt3 = "theMHD-github";
-    alert(txt3.anchor(''));
+    alert(txt3.anchor('sm.mahdavi'));
     alert(txt3.big());
     alert(txt3.bold());
     alert(txt3.italics());
