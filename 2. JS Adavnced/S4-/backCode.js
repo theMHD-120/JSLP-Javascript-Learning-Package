@@ -200,7 +200,7 @@ function stringObject() {
         for exmple:
             var arr1 = new Array(...);  --> to make an array object;
             var str1 = new String(...); --> to make a string object;
-            var date1 = new Date();     --> to make a date object;
+            var date1 = new Date(...);  --> to make a date object;
             and etc ...
     */
     var programmer1 = new programmer("Seyed mahdi", "theMHD", "JavaScript");
