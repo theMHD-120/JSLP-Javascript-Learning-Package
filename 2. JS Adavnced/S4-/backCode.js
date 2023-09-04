@@ -21,7 +21,7 @@ function stringObject() {
         14. toLowerCase, convert alphabetic characters to their lowecase letter;
 
     Wrapper methods (they are used to make html tags with our string):
-        THEY ARE ALL EXPIRED !!!
+        ATTENTION: THESE METHODS ARE ALL EXPIRED !!!
         1.  anchor, to put a string in the <a>..</a> (anchor) tag and mark it;       
         2.  big, to put a string in the <big>..</big> tag;          
         3.  bold, to put a string in the <b>..</b> tag;                          
