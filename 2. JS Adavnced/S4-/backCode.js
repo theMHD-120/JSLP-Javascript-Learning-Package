@@ -13,6 +13,8 @@ function stringObject() {
         6. indexOf, to get index of a character (or first index of a sub string) in a string;
         7. lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
         8. replace, to replace an existing character or substring with another characters or substrings;
+        9. search, just like indexOf :);
+        10. slice, 
     */
 
     var txt1 = "Hi; How are you?";
@@ -27,7 +29,7 @@ function stringObject() {
     alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            
     alert("Attention: txt1 not changed ...\n" + "Now, txt1 is:\n" + txt1);
     /*
-        To change txt1, you should use assignment (see bottom):
+        To change txt1, we should use assignment (see bottom):
         txt1 = txt1.concat("\n-Thanks;", " I'm fine;", txt2);
     */
 
@@ -89,6 +91,8 @@ function stringObject() {
     /*
         Note #1: as you saw, just the first <o> changed with <O> in the first state;
         Note #2: as you saw, we did not have any changes in the last state :);
+        ---
+        Like concat, To change txt1, we should use assignment (txt1 = txt1.replace(...,...));
     */
 
     function programmer(name, nickName, pLang) {
