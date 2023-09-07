@@ -238,4 +238,11 @@ function dateObject() {
             https://www.unixtimestamp.com/;
             https://en.wikipedia.org/wiki/Unix_time
     */
+
+    var dateString = new Date("2020/06/12");
+    alert(dateString);
+    /*
+        The date string;
+        Try it and see the result :);
+    */
 }
