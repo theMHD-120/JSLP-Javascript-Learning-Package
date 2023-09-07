@@ -246,4 +246,15 @@ function dateObject() {
         Try it and see the result :);
         Format: year/month/day;
     */
+
+    var theDate = new Date(2022, 2, 18, 21, 50, 44, 839);
+    alert(theDate); 
+    /*
+        A random date;
+        Format: year, month, day, hour, minute, second, millisecond;
+        ---
+        Why we see March instead of February?
+            Because time numbers are starts with 0;
+            0 --> january, 1 --> February, 2 --> March and etc ...
+    */
 }
