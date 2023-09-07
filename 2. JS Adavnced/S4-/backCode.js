@@ -234,6 +234,8 @@ function dateObject() {
     /*
         What is it? the Unix Time Stamp;
         It represents the date of 98674789238947 milliseconds after 00:00:00 UTC on 1 January 1970;
-        Learn more: https://www.unixtimestamp.com/;
+        Learn more: 
+            https://www.unixtimestamp.com/;
+            https://en.wikipedia.org/wiki/Unix_time
     */
 }
