@@ -239,7 +239,7 @@ function dateObject() {
             https://en.wikipedia.org/wiki/Unix_time
         ---
         Why is a timestamp is helpful?
-            Often used to compare tow dates or times; 
+            Often used to compare tow dates or times; Which one is newer?
             1 day --> 86400 seconds;
             1 hour --> 3600 seconds;
             1 minute --> 60 seconds;
