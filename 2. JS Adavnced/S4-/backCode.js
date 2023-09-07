@@ -237,6 +237,13 @@ function dateObject() {
         Learn more: 
             https://www.unixtimestamp.com/;
             https://en.wikipedia.org/wiki/Unix_time
+        ---
+        Why is a timestamp is helpful?
+            Often used to compare tow dates or times; 
+            1 day --> 86400 seconds;
+            1 hour --> 3600 seconds;
+            1 minute --> 60 seconds;
+            1 second --> 1000 milliseconds;
     */
 
     var dateString = new Date("2020/06/12");
