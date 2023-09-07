@@ -222,3 +222,9 @@ function stringObject() {
 
 // Part 11 ------------------------------------------------------------------------------------------------------------
 // JavaScript Objects - Date;
+
+function dateObject() {
+    
+    var date = new Date();  // to get the current date of client's system;
+    alert(date);
+}
