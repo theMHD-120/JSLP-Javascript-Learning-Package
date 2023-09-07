@@ -33,7 +33,7 @@ function stringObject() {
         9.  sup, to put a string in the <sup>..</sup> tag;
     */
 
-        
+    // String-object methods ---------------------------------------------------------------
     var txt1 = "Hi; How are you?";
     alert("The txt1 is:\n" + txt1);
     alert("Length of txt1 is:\n" + txt1.length);                                                    // #1;
@@ -225,6 +225,15 @@ function stringObject() {
 
 function dateObject() {
     
-    var date = new Date();  // to get the current date of client's system;
-    alert(date);
+    var currDate = new Date(); 
+    alert(currDate);
+    //  To get the current date of client's system;
+
+    var tsDate = new Date(98674789238947);
+    alert(tsDate);
+    /*
+        What is it? the Unix Time Stamp;
+        It represents the date of 98674789238947 milliseconds after 00:00:00 UTC on 1 January 1970;
+        Learn more: https://www.unixtimestamp.com/;
+    */
 }
