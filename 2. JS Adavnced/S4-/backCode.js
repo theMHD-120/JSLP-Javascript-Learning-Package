@@ -262,6 +262,21 @@ function dateObject() {
         ---
         Why we see March instead of February?
             Because time numbers are starts with 0;
-            0 --> january, 1 --> February, 2 --> March and etc ...
+            0 --> january, 1 --> February, 2 --> March, ..., december --> 11;
+    */
+
+    
+    // Date-object methods -----------------------------------------------------------------
+    alert(currDate.getDate());
+    alert(currDate.getDay());
+    /*
+        What getDay method do?
+            It shows the day number in the current month;
+        What getDay method do?
+            It shows the day number in the current week;
+            Sunnday  --> 0;
+            Monday   --> 1;
+            ...
+            Saturday --> 6;
     */
 }
