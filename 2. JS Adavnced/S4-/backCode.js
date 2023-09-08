@@ -290,6 +290,8 @@ function dateObject() {
                 Monday   --> 1;
                 ...
                 Saturday --> 6;
+                
+        Other methods need no explanation :);
     */
 
 
