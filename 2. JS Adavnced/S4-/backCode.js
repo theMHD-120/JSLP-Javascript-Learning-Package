@@ -310,13 +310,18 @@ function dateObject() {
     */
 
     alert("The current date of client system is:\n" + currDate);
-    currDate(currDate.setTime(372140710578));
+    currDate.setTime(372140710578);
     alert("1.New scheduled date:\n" + currDate);
-    currDate(currDate.setTime(-372140710578));
+    currDate.setTime(-372140710578);
     alert("2.New scheduled date:\n" + currDate);
     /*
         To change the date of maked object (currDate); 
         What does the minus(-) sign do?
             To get the date of a timestamp older than January 1, 1970;
     */
+
+    var currDate = new Date(); 
+    alert(currDate.toDateString());
+    alert(currDate.toString());
+    //  Try them and see the results :);
 }
