@@ -234,7 +234,7 @@ function dateObject() {
     /*
         What is it? the Unix Time Stamp;
         It represents the date of 98674789238947 milliseconds after 00:00:00 UTC on 1 January 1970;
-        Learn more: 
+        Learn more about unix-timestamp: 
             https://www.unixtimestamp.com/;
             https://en.wikipedia.org/wiki/Unix_time
         ---
@@ -268,15 +268,29 @@ function dateObject() {
     
     // Date-object methods -----------------------------------------------------------------
     alert(currDate.getDate());
+    alert(currDate.getFullYear());
+    alert(currDate.getMonth());
     alert(currDate.getDay());
+    alert(currDate.getHours());
+    alert(currDate.getMinutes());
+    alert(currDate.getSeconds());
+    alert(currDate.getMilliseconds());
     /*
-        What getDay method do?
-            It shows the day number in the current month;
-        What getDay method do?
-            It shows the day number in the current week;
-            Sunnday  --> 0;
-            Monday   --> 1;
-            ...
-            Saturday --> 6;
+        What above methods do?
+            .getDate():
+                It shows the day number in the current month;
+            .getFullYear():
+                It shows the current year (in fully type);
+            .getMonth():
+                It shows the month number in the current year;
+                Starts from number 0(january) to 11(december);
+            .getDay():
+                It shows the day number in the current week;
+                Sunnday  --> 0;
+                Monday   --> 1;
+                ...
+                Saturday --> 6;
     */
+
+
 }
