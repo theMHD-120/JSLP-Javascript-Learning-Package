@@ -257,7 +257,7 @@ function dateObject() {
     var theDate = new Date(2022, 2, 18, 21, 50, 44, 839);
     alert(theDate); 
     /*
-        A random date ot time;
+        A desired date or time;
         Format: year, month, day, hour, minute, second, millisecond;
         ---
         Why we see March instead of February?
@@ -298,5 +298,14 @@ function dateObject() {
     /*
         It converts the current date to a timestamp;
         Scroll up for more explanations (tsDate);
+    */
+
+    alert("12 March, 2019:\n" + Date.parse("12 March, 2019"));
+    alert("2022/03/04:\n" + Date.parse("2022/03/04"));
+    alert("September 21, 2000:\n" + Date.parse("September 21, 2000"));
+    alert("december 3 2005:\n" + Date.parse("december 3 2005"));
+    /*
+        To get the timestamp of a desired date (input can be of any type); 
+        Best type for input --> day month (with letters), year (first example);
     */
 }
