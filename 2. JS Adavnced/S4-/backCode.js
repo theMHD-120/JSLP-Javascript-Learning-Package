@@ -276,7 +276,7 @@ function dateObject() {
     alert(currDate.getSeconds());
     alert(currDate.getMilliseconds());
     /*
-        What above methods do?
+        What do the above methods do?
             .getDate():
                 It shows the day number in the current month;
             .getFullYear():
@@ -307,5 +307,16 @@ function dateObject() {
     /*
         To get the timestamp of a desired date (input can be of any type); 
         Best type for input --> day month (with letters), year (first example);
+    */
+
+    alert("The current date of client system is:\n" + currDate);
+    currDate(currDate.setTime(372140710578));
+    alert("1.New scheduled date:\n" + currDate);
+    currDate(currDate.setTime(-372140710578));
+    alert("2.New scheduled date:\n" + currDate);
+    /*
+        To change the date of maked object (currDate); 
+        What does the minus(-) sign do?
+            To get the date of a timestamp older than January 1, 1970;
     */
 }
