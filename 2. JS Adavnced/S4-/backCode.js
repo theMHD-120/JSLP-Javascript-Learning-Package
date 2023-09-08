@@ -290,9 +290,13 @@ function dateObject() {
                 Monday   --> 1;
                 ...
                 Saturday --> 6;
-                
+
         Other methods need no explanation :);
     */
 
-
+    alert(currDate.getTime());
+    /*
+        It converts the current date to a timestamp;
+        Scroll up for more explanations (tsDate);
+    */
 }
