@@ -325,3 +325,8 @@ function dateObject() {
     alert(currDate.toString());
     //  Try them and see the results :);
 }
+
+
+
+// Part 11 ------------------------------------------------------------------------------------------------------------
+// JavaScript Objects - Array;
