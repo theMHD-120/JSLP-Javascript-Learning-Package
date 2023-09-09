@@ -40,11 +40,11 @@ function stringObject() {
     alert("The constructor of txt1 is:\n" + txt1.constructor);                                      // #2;
     alert("The 5th character (index 4) is:\n" + txt1.charAt(4));                                    // #3;
     alert("The ascii code of fifth charator (index 4) is:\n"                                        // #4;
-        + txt1.charCodeAt(4));  
+        + txt1.charCodeAt(4));
 
 
     var txt2 = "\nWhats up?";                                                                       // #5;
-    alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));                            
+    alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));
     alert("Attention: txt1 not changed ...\n" + "Now, txt1 is:\n" + txt1);
     /*
         To change txt1, we should use assignment (see bottom):
@@ -53,7 +53,7 @@ function stringObject() {
 
 
     alert("<o> is in index:\n" + txt1.indexOf("o"));  // in <How>;                                   // #6;
-    alert("With starting from index 10 (11th character), <o> is in the\n" 
+    alert("With starting from index 10 (11th character), <o> is in the\n"
         + txt1.indexOf("o", 10));  // in <you> (<o> is in index 13);
     /* 
         Note #1:
@@ -75,7 +75,7 @@ function stringObject() {
         + txt1.lastIndexOf("o", 13));
     alert("From the first index (index 0) to the index 12 (13th character), <o> is in index:\n"
         + txt1.lastIndexOf("o", 12));
-    alert("From the last index, The first index of <are> --> <a> is in index:\n" 
+    alert("From the last index, The first index of <are> --> <a> is in index:\n"
         + txt1.lastIndexOf("are"));
     /*
         Like indexOf, if a character or a sub string did not found, lastIndexOf returns <-1>;
@@ -118,15 +118,15 @@ function stringObject() {
 
 
     alert("A substring from txt1 (index 0 (1st character) to index 5 (6th character)):\n"           // #10;
-        + txt1.slice(0, 6)); 
-    alert("A substring from txt1 (index 5 (6th character) to index 12 (13th character)):\n"           
-        + txt1.slice(5, 13)); 
+        + txt1.slice(0, 6));
+    alert("A substring from txt1 (index 5 (6th character) to index 12 (13th character)):\n"
+        + txt1.slice(5, 13));
     /*
         Just like python:
             txt1.slice(5, 13) ~ txt1[5:13] , txt1.slice(5) ~ txt1[5:] (from index 5 to the end);
     */
-    
-            
+
+
     var txt1Array = txt1.split(" ");                                                                // #11;
     var txt1Array2 = txt1.split(" ", 2);  // 2 is length of array;                                                            
     alert("An array by splitting txt1 by the white spaces:\n" + txt1Array);
@@ -224,8 +224,8 @@ function stringObject() {
 // JavaScript Objects - Date;
 
 function dateObject() {
-    
-    var currDate = new Date(); 
+
+    var currDate = new Date();
     alert(currDate);
     //  To get the current date of client's system;
 
@@ -255,7 +255,7 @@ function dateObject() {
     */
 
     var theDate = new Date(2022, 2, 18, 21, 50, 44, 839);
-    alert(theDate); 
+    alert(theDate);
     /*
         A desired date or time;
         Format: year, month, day, hour, minute, second, millisecond;
@@ -265,7 +265,7 @@ function dateObject() {
             0 --> january, 1 --> February, 2 --> March, ..., december --> 11;
     */
 
-    
+
     // Date-object methods -----------------------------------------------------------------
     alert(currDate.getDate());
     alert(currDate.getFullYear());
@@ -320,17 +320,8 @@ function dateObject() {
             To get the date of a timestamp older than January 1, 1970;
     */
 
-    var currDate = new Date(); 
+    var currDate = new Date();
     alert(currDate.toDateString());
     alert(currDate.toString());
     //  Try them and see the results :);
-}
-
-
-
-// Part 12 ------------------------------------------------------------------------------------------------------------
-// JavaScript Objects - Array;
-
-function arrayObject() {
-
 }
