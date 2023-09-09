@@ -41,6 +41,7 @@ function arrayObject() {
         join for arrays (to convert an array to a string);
         ---
         Why carsArray1 and carsArray2 did not changed?
-            Assignment is needed; Ok? :);
+            Assignment is needed; 
+            Ok? :);
     */
 }
