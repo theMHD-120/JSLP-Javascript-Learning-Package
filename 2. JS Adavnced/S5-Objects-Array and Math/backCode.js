@@ -29,4 +29,18 @@ function arrayObject() {
         Like lastIndexOf method in strings;
         Of course with the above condition (it works for array elements...);
     */
+
+    alert(carsArray1.join(", "));
+    alert(carsArray1.join(" * "));
+    alert(carsArray2.join("-"));
+    alert(carsArray1.join(" & "));
+    alert(carsArray2.join(" and "));
+    /*
+        The inverse of split method in strings;
+        split fot strings (to convert a string to an array);
+        join for arrays (to convert an array to a string);
+        ---
+        Why carsArray1 and carsArray2 did not changed?
+            Assignment is needed; Ok? :);
+    */
 }
