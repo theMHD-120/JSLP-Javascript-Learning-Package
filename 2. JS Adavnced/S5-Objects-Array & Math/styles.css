@@ -24,4 +24,6 @@ input {
   background-color: red;
   border-color: darkviolet;
   color: rgb(234, 214, 243);
+  box-shadow: rgba(0, 0, 0, 0.592) 3px 3px 4px;
+  text-shadow: rgba(0, 0, 0, 0.592) 2px 1px 3px;
 }
