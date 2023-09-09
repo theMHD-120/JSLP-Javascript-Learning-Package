@@ -17,11 +17,11 @@ input {
   color: darkviolet;
   border-radius: 12px;
   border: 4px red solid;
-  background-color: rgb(229, 203, 240);;
+  background-color: rgb(234, 214, 243);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #part_name:hover {
   background-color: red;
   border-color: darkviolet;
-  color: rgb(229, 203, 240);
+  color: rgb(234, 214, 243);
 }
