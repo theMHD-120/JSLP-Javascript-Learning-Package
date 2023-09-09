@@ -139,7 +139,7 @@ function stringObject() {
             txt1Array[1]  --> "how";
             txt1Array[2]  --> "are";
             txt1Array[3]  --> "you?";
-
+            ---
             txt1Array2[0]  --> "Hi;";
             txt1Array2[1]  --> "how";
     */
