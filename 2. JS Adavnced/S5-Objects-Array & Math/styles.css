@@ -7,10 +7,21 @@ input {
 }
 
 #part_name {
+  width: 130px;
   font-size: 30px;
   margin-top: 40px;
+  transition: 300ms;
   font-weight: bold;
-  font-family: serif;
+  text-align: center;
   margin-bottom: 10px;
   color: darkviolet;
+  border-radius: 12px;
+  border: 4px red solid;
+  background-color: rgb(229, 203, 240);;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#part_name:hover {
+  background-color: red;
+  border-color: darkviolet;
+  color: rgb(229, 203, 240);
 }
