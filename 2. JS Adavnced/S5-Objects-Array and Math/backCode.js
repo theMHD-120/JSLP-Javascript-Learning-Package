@@ -14,7 +14,7 @@ function arrayObject() {
     alert(carsArray1);
     /*
         Why carsArray1 did not changed?
-            Remember concatenation in strings (concat method) :);
+            Remember concatenation in strings (concat() method) :);
     */  
 
     alert(carsArray1.indexOf("F"));
@@ -22,11 +22,11 @@ function arrayObject() {
     alert(carsArray1.indexOf("Bugatti", 2));
     alert(carsArray1.indexOf("bugatti"));
     /*
-        Ok? this is like the indexOf method on strings;
+        Ok? this is like the indexOf() method on strings;
         It works for array elements (not a single letter or a substring of an element);
         ---
-        Also we have the <<< lastIndexOf >>> method for arrays;
-        Like lastIndexOf method in strings;
+        Also we have the <<< lastIndexOf() >>> method for arrays;
+        Like lastIndexOf() method in strings;
         Of course with the above condition (it works for array elements...);
     */
 
@@ -36,14 +36,22 @@ function arrayObject() {
     alert(carsArray1.join(" & "));
     alert(carsArray2.join(" and "));
     /*
-        The inverse of split method in strings;
-        split fot strings (to convert a string to an array);
-        join for arrays (to convert an array to a string);
+        The inverse of split() method in strings;
+        split() fot strings (to convert a string to an array);
+        join() for arrays (to convert an array to a string);
         ---
         Why carsArray1 and carsArray2 did not changed?
             Assignment is needed; 
-            Care about this because it won't be repeat again ...
+            Pay attention to this point because it won't be repeat again ...
             Ok? :);
+    */
+   
+    carsArray1.reverse();
+    alert("Reversed carArray1 is:\n" + carsArray1);
+    carsArray1.reverse();
+    /*
+        Assignment is no needed!
+        Using the reverse() method, the array will be changed!;
     */
    
 

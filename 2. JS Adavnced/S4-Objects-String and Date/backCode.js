@@ -33,6 +33,7 @@ function stringObject() {
         9.  sup, to put a string in the <sup>..</sup> tag;
     */
 
+        
     // String-object methods ---------------------------------------------------------------
     var txt1 = "Hi; How are you?";
     alert("The txt1 is:\n" + txt1);
@@ -42,7 +43,6 @@ function stringObject() {
     alert("The ascii code of fifth charator (index 4) is:\n"                                        // #4;
         + txt1.charCodeAt(4));
 
-
     var txt2 = "\nWhats up?";                                                                       // #5;
     alert(txt1.concat("\n-Thanks;", " I'm fine;", txt2));
     alert("Attention: txt1 not changed ...\n" + "Now, txt1 is:\n" + txt1);
@@ -50,7 +50,6 @@ function stringObject() {
         To change txt1, we should use assignment (see bottom):
         txt1 = txt1.concat("\n-Thanks;", " I'm fine;", txt2);
     */
-
 
     alert("<o> is in index:\n" + txt1.indexOf("o"));  // in <How>;                                   // #6;
     alert("With starting from index 10 (11th character), <o> is in the\n"
@@ -68,7 +67,6 @@ function stringObject() {
                 alert(txt1.indexOf("are"));  // returns <8>, index of first character --> <a>;
                 alert(txt1.indexOf("aer"));  // <aer> doesn't exist in txt1; So it returns <-1>;
     */
-
 
     alert("From the last index, <o> is in index:\n" + txt1.lastIndexOf("o"));                        // #7;
     alert("From the first index (index 0) to the index 13 (14th character), <o> is in index:\n"
@@ -105,7 +103,6 @@ function stringObject() {
             alert("From the last index, The first index of <are> --> <a> is in index:\n" + txt1.lastIndexOf("are"), 7);
     */
 
-
     alert("New txt1 (with replace <o> with <O>) is:\n" + txt1.replace("o", "O"));                    // #8;
     alert("New txt1 (with replace < you> with <-they>) is:\n" + txt1.replace(" you", "-they"));
     alert("If first character or word does not exist, we get:\n" + txt1.replace("y ou", "-they"));
@@ -116,7 +113,6 @@ function stringObject() {
         Like concat, To change txt1, we should use assignment (txt1 = txt1.replace(...,...));
     */
 
-
     alert("A substring from txt1 (index 0 (1st character) to index 5 (6th character)):\n"           // #10;
         + txt1.slice(0, 6));
     alert("A substring from txt1 (index 5 (6th character) to index 12 (13th character)):\n"
@@ -125,7 +121,6 @@ function stringObject() {
         Just like python:
             txt1.slice(5, 13) ~ txt1[5:13] , txt1.slice(5) ~ txt1[5:] (from index 5 to the end);
     */
-
 
     var txt1Array = txt1.split(" ");                                                                // #11;
     var txt1Array2 = txt1.split(" ", 2);  // 2 is length of array;                                                            
@@ -144,14 +139,12 @@ function stringObject() {
             txt1Array2[1]  --> "how";
     */
 
-
     alert("Substring of txt1 between index 3 and index 10 is:\n" + txt1.substring(3, 10));          // #12;
     /*
         Attention: 
             Returns characters between index 3 and index 10;
             Doesn't return character of index 3 and index 10;
     */
-
 
     alert("txt1 with uppercase alphabets:\n" + txt1.toUpperCase());                                 // #13;
     alert("txt1 with lowercase alphabets:\n" + txt1.toLowerCase());                                 // #14;
