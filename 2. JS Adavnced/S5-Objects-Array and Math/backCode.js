@@ -84,6 +84,11 @@ function arrayObject() {
     */
 
     alert(carsArray3.toString());
+    /*
+        How does arrayName.toString() work?
+            Like arrayName.join(",");
+    */
+
 
     // Stack data structure with aaray object ----------------------------------------------
     /*
