@@ -52,7 +52,17 @@ function arrayObject() {
         To learn about stack data structure, see the following links:
             https://www.geeksforgeeks.org/stack-data-structure
             https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
-    */
 
-    
+        Two stack methods: 
+            1.pop;
+            2.push;
+    */
+    var theLastCar2 = carsArray2.pop();
+    alert("The last element of carsArray2 is removed:\ncarsArray2 = " + carsArray2);
+    alert("The removed element is assigned to theLastCar2;\ntheLastCar2 = " + theLastCar2);
+
+    carsArray1.push(theLastCar2);
+    alert("The removed element is pushed into the carsArray1;\ncarsArray1 = " + carsArray1);
+    carsArray2.push("Renault", theLastCar2, "Pagani");  // it can take infinite inputs;
+    alert("Three new cars pushed into the carsArray2;\ncarsArray2 = " + carsArray2);
 }
