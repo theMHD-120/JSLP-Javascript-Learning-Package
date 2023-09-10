@@ -56,9 +56,9 @@ function arrayObject() {
 
     alert("Now, carsArray2 is:\n" + carsArray2);
     alert(carsArray2.slice(2));
-    alert(carsArray2.slice(2, 5));
+    alert(carsArray2.slice(1, 3));
     alert(carsArray2.slice(-2));
-    alert(carsArray2.slice(-5, -2));
+    alert(carsArray2.slice(-3, -1));
     alert(carsArray2.slice(-1));
     alert(carsArray2.slice(0) + "\n" + carsArray2);
     /*  
