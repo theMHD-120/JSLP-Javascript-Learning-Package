@@ -54,6 +54,36 @@ function arrayObject() {
         Using the reverse() method, the array will be changed!;
     */
 
+    alert("Now, carsAttay2 is:\n" + carsArray2);
+    alert(carsArray2.slice(2));
+    alert(carsArray2.slice(2, 5));
+    alert(carsArray2.slice(-2));
+    alert(carsArray2.slice(-5, -2));
+    alert(carsArray2.slice(-1));
+    alert(carsArray2.slice(0) + "\n" + carsArray2);
+    /*  
+        Like slice() method in strings;
+        About minus(-) sign:
+            carsArray2.slice(-2) = carsArray2.reverse().slice(0,2);
+            It represents carsArray2[-2] and carsArray2[-1];
+            The first element of array --> carsArray2[0];
+            The last element of array --> carsArray2[-1];
+            Check out the other examples;
+    */
+
+    var carsArray3 = ["Tesla", "Jac", "Mazda", "Toyota", "Nissan", "Ford"];
+    alert("carsArray3 before changing:\n" + carsArray3);
+    carsArray3.splice(2, 3, "Honda", "Chevrolet", "Suzuki");
+    alert("carsArray3 changed (from index 2 to index 4!)\n" + carsArray3);
+    /*
+        From index 2 with length = 3 (2, 3 and index 4);
+        Replacing "Mazda", "Toyota" and "Nissan" with ...
+        "Honda", "Chevrolet", "Suzuki" (in order);
+        ---
+        You can test some more examples anout splice() method;
+    */
+
+    alert(carsArray3.toString());
 
     // Stack data structure with aaray object ----------------------------------------------
     /*
@@ -74,6 +104,8 @@ function arrayObject() {
     carsArray2.push("Renault", theLastCar2, "Pagani");  // it can take infinite inputs;
     alert("Three new cars pushed into the carsArray2;\ncarsArray2 = " + carsArray2);
 
+
+    // Queue data structure with aaray object ----------------------------------------------
     firstElement = carsArray1.shift();
     alert("The removed element (from carsArray1) is:\n" + firstElement);
     /*
@@ -85,15 +117,8 @@ function arrayObject() {
         0 (first index) is returned;
         It (first index) removed from the array;
         ...
-        This feature can be used to make queue data struncture;
+        This feature can be used to make a queue data struncture;
         Learn about queue data structure:
             https://www.geeksforgeeks.org/queue-data-structure/;   
     */
-
-    alert("Now, carsAttay2 is:\n" + carsArray2);
-    alert(carsArray2.slice(2));
-    alert(carsArray2.slice(2, 5));
-    alert(carsArray2.slice(-2));
-    alert(carsArray2.slice(-5, -2));
-    alert(carsArray2.slice(-1) + "\n" + carsArray2.slice(0) + "\n" + carsArray2);
 }
