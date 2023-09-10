@@ -90,5 +90,10 @@ function arrayObject() {
             https://www.geeksforgeeks.org/queue-data-structure/;   
     */
 
-    
+    alert("Now, carsAttay2 is:\n" + carsArray2);
+    alert(carsArray2.slice(2));
+    alert(carsArray2.slice(2, 5));
+    alert(carsArray2.slice(-2));
+    alert(carsArray2.slice(-5, -2));
+    alert(carsArray2.slice(-1) + "\n" + carsArray2.slice(0) + "\n" + carsArray2);
 }
