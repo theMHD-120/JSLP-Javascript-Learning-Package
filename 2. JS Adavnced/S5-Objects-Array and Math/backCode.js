@@ -54,7 +54,7 @@ function arrayObject() {
         Using the reverse() method, the array will be changed!;
     */
 
-    alert("Now, carsAttay2 is:\n" + carsArray2);
+    alert("Now, carsArray2 is:\n" + carsArray2);
     alert(carsArray2.slice(2));
     alert(carsArray2.slice(2, 5));
     alert(carsArray2.slice(-2));
