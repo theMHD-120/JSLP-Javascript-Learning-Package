@@ -127,3 +127,8 @@ function arrayObject() {
             https://www.geeksforgeeks.org/queue-data-structure/;   
     */
 }
+
+
+
+// Part 13 ------------------------------------------------------------------------------------------------------------
+// JavaScript Objects - Math;
