@@ -53,7 +53,7 @@ function arrayObject() {
         Assignment is no needed!
         Using the reverse() method, the array will be changed!;
     */
-   
+
 
     // Stack data structure with aaray object ----------------------------------------------
     /*
@@ -70,7 +70,25 @@ function arrayObject() {
     alert("The removed element is assigned to theLastCar2;\ntheLastCar2 = " + theLastCar2);
 
     carsArray1.push(theLastCar2);
-    alert("The removed element is pushed into the carsArray1;\ncarsArray1 = " + carsArray1);
+    alert("The removed element (from carsArray2) is pushed into the carsArray1;\ncarsArray1 = " + carsArray1);
     carsArray2.push("Renault", theLastCar2, "Pagani");  // it can take infinite inputs;
     alert("Three new cars pushed into the carsArray2;\ncarsArray2 = " + carsArray2);
+
+    firstElement = carsArray1.shift();
+    alert("The removed element (from carsArray1) is:\n" + firstElement);
+    /*
+        All array elements are shifted to the left (one home (or index));
+        9 --> 8;
+        8 --> 7;
+        ...
+        1 --> 0;
+        0 (first index) is returned;
+        It (first index) removed from the array;
+        ...
+        This feature can be used to make queue data struncture;
+        Learn about queue data structure:
+            https://www.geeksforgeeks.org/queue-data-structure/;   
+    */
+
+    
 }
