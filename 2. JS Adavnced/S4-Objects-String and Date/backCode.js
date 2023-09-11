@@ -4,33 +4,33 @@
 function stringObject() {
 
     /*
-    Learning about some String methods:
-        1.  length, to get length of a string;
-        2.  constructor, to get constructor of a string;
-        3.  charAt, to get character of a string index;
-        4.  charCodeAt, to get ascii code of above character; 
-        5.  concat, to concatinate some (infinite) strings to a string;
-        6.  indexOf, to get index of a character (or first index of a sub string) in a string;
-        7.  lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
-        8.  replace, to replace an existing character or substring with another characters or substrings;
-        9.  search, just like indexOf :);
-        10. slice, to get a substring from a string (from one index to another index);
-        11. split, to split a string with an existing character (space, comma or ...);
-        12. substring, to get a substring of a string between two indexes (the substr method has expired);
-        13. toUpperCase, convert alphabetic characters to their uppercase letter;
-        14. toLowerCase, convert alphabetic characters to their lowecase letter;
+        Learning about some String methods:
+            1.  length, to get length of a string;
+            2.  constructor, to get constructor of a string;
+            3.  charAt, to get character of a string index;
+            4.  charCodeAt, to get ascii code of above character; 
+            5.  concat, to concatinate some (infinite) strings to a string;
+            6.  indexOf, to get index of a character (or first index of a sub string) in a string;
+            7.  lastIndexOf, like indexOf; But it starts checking from the last index to the beggining;
+            8.  replace, to replace an existing character or substring with another characters or substrings;
+            9.  search, just like indexOf :);
+            10. slice, to get a substring from a string (from one index to another index);
+            11. split, to split a string with an existing character (space, comma or ...);
+            12. substring, to get a substring of a string between two indexes (the substr method has expired);
+            13. toUpperCase, convert alphabetic characters to their uppercase letter;
+            14. toLowerCase, convert alphabetic characters to their lowecase letter;
 
-    Wrapper methods (they are used to make html tags with our string):
-        ATTENTION: THESE METHODS ARE ALL EXPIRED !!!
-        1.  anchor, to put a string in the <a>..</a> (anchor) tag and mark it;       
-        2.  big, to put a string in the <big>..</big> tag;          
-        3.  bold, to put a string in the <b>..</b> tag;                          
-        4.  italics, to put a string in the <i>..</i> tag;                       
-        5.  link, to make a link with a string (put string in the <a>..</a> tag);
-        6.  small, to put a string in the <small>..</small> tag;  
-        7.  strike, to put a string in the <strike>..</strike> tag; 
-        8.  sub, to put a string in the <sub>..</sub> tag;
-        9.  sup, to put a string in the <sup>..</sup> tag;
+        Wrapper methods (they are used to make html tags with our string):
+            ATTENTION: THESE METHODS ARE ALL EXPIRED !!!
+            1.  anchor, to put a string in the <a>..</a> (anchor) tag and mark it;       
+            2.  big, to put a string in the <big>..</big> tag;          
+            3.  bold, to put a string in the <b>..</b> tag;                          
+            4.  italics, to put a string in the <i>..</i> tag;                       
+            5.  link, to make a link with a string (put string in the <a>..</a> tag);
+            6.  small, to put a string in the <small>..</small> tag;  
+            7.  strike, to put a string in the <strike>..</strike> tag; 
+            8.  sub, to put a string in the <sub>..</sub> tag;
+            9.  sup, to put a string in the <sup>..</sup> tag;
     */
 
         
@@ -175,12 +175,12 @@ function stringObject() {
     // Object functions in JavaScript (like classes in other languages) --------------------
     function programmer(name, nickName, pLang) {
         /*
-        What is the <this>?
-        <this> is a keyword that points to its own function;
-        Here, <this> points to --> function programmer(...) {...};
-        <this> is equivalent of <self> in python classes (or <this> in java and c++ classes);
-        ---
-        In this function (see it as an object), we have 3 properties: name, nickName and pLang;
+            What is the <this>?
+            <this> is a keyword that points to its own function;
+            Here, <this> points to --> function programmer(...) {...};
+            <this> is equivalent of <self> in python classes (or <this> in java and c++ classes);
+            ---
+            In this function (see it as an object), we have 3 properties: name, nickName and pLang;
         */
         this.name = name;
         this.nickName = nickName;
@@ -188,13 +188,13 @@ function stringObject() {
     }
 
     /*
-    How can we use from objects in JavaScript?
-        var <a name for our object> = new <object name>(something here);
-        for exmple:
-            var arr1 = new Array(...);  --> to make an array object;
-            var str1 = new String(...); --> to make a string object;
-            var date1 = new Date(...);  --> to make a date object;
-            and etc ...
+        How can we use from objects in JavaScript?
+            var <a name for our object> = new <object name>(something here);
+            for exmple:
+                var arr1 = new Array(...);  --> to make an array object;
+                var str1 = new String(...); --> to make a string object;
+                var date1 = new Date(...);  --> to make a date object;
+                and etc ...
     */
     var programmer1 = new programmer("Seyed mahdi", "theMHD", "JavaScript");
     alert("The name of programmer1 is:\n" + programmer1.name);
@@ -202,9 +202,9 @@ function stringObject() {
     alert("The programming language of programmer1 is:\n" + programmer1.pLang);
 
     /*
-    Change the defined object (programmer);
-    How? with add new properties;
-    See bottom:
+        Change the defined object (programmer);
+        How? with add new properties;
+        See bottom:
     */
     programmer.prototype.age = null;  // age added as a new property;
     programmer1.age = 20;             // 20 saves as a string ("20");

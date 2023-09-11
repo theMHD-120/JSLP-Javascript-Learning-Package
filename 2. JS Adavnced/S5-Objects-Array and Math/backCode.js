@@ -137,3 +137,10 @@ function arrayObject() {
 
 // Part 13 ------------------------------------------------------------------------------------------------------------
 // JavaScript Objects - Math;
+
+function mathObject() {
+
+    /*
+    Everything is static;
+    */
+}
