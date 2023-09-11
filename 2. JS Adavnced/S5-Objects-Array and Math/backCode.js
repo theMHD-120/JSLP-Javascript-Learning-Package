@@ -151,9 +151,9 @@ function mathObject() {
 
     // The e(neper) number, pi number and logarithms methods -------------------------------
     /*
-        1.E --> neper number, PI --> pi number;
-        2.LN2 --> natural (base-e) logarithm of 2;
-        3.LOG10E --> base-10 logarithm of e;
+        1.E       --> neper number, PI --> pi number;
+        2.LN2     --> natural (base-e) logarithm of 2;
+        3.LOG10E  --> base-10 logarithm of e;
         4.log10() --> a function that returns the logarithm of a number with base-10;
     */
     alert(Math.E);
@@ -171,10 +171,10 @@ function mathObject() {
 
     // Square root, exponential, power and trigonometric methods --------------------------
     /*
-        5.SQRT2 --> square root of 2;
-        6.sqrt(x) --> returns the square root of x;
+        5.SQRT2     --> square root of 2;
+        6.sqrt(x)   --> returns the square root of x;
         7.pow(x, y) --> returns x ^ y;
-        8.exp(x) --> returns the exponential of x (e ^ x);
+        8.exp(x)    --> returns the exponential of x (e ^ x);
         9.trigonometric functions are based on radians;
     */
     alert(Math.SQRT2);
@@ -182,22 +182,54 @@ function mathObject() {
     alert(Math.pow(5, 3));  
     alert(Math.exp(2) + " = " + Math.pow(Math.E, 2));
     alert(Math.cos(Math.PI));
+    alert(Math.acos(-1));  // returns the arccos (cos invers) of -1 (it's pi in radian);
 
-    
-    // Round and random -------------------------------------------------------------------
+
+    // Round and random methods -----------------------------------------------------------
     /*
         10.round(x) --> returns the round of x (an integer);
         11.random() --> returns a random real number between 0 and 1;
         Note:
             0 < Math.random() < 1;
             If we want to get a random number between 0 and x,
-            We can use Math.random(x * Math.random());
+            We can use x * Math.random();
             0 < Math.random() < 1 --> * x --> 0 < x * Math.random() < x;
+            To get a random integer number --> Math.round(x * Math.random());
     */
     alert(Math.round(13.4));
     alert(Math.round(13.5));    
     alert(Math.round(13.6));
     alert(Math.round(13.7653));
+    alert(Math.round(-13.2568));
+    alert(Math.round(-13.7653));
     alert(Math.random());
-    alert(Math.random(4 * Math.random()));
+    alert(20 * Math.random());
+    alert(Math.round(20 * Math.random()));
+
+
+    // Floor and ceil methods -------------------------------------------------------------
+    /*
+        12.floor(x) --> returns the floor (bracket (integer part)) of x; 
+        13.ceil(x)  --> returns the ceil of x;
+    */
+    alert(Math.floor(12.334));
+    alert(Math.floor(12.845));
+    alert(Math.floor(-12.33532));
+    alert(Math.floor(-12.8325));
+    alert(Math.ceil(12.3));
+    alert(Math.ceil(12.83));
+    alert(Math.ceil(-12.3535));
+    alert(Math.ceil(-12.8913));
+    alert(Math.floor(20 * Math.random()));
+    alert(Math.ceil(20 * Math.random()));
+
+
+    // Max and min methods ----------------------------------------------------------------
+    /*
+        14.max(...) --> returns the maximum of some real numerbs; 
+        15.min(...) --> returns the minimum of some real numerbs;
+        Note: Both of them take infinite inputs; 
+    */
+    alert(Math.max(2, 3, 5.215, 3.325123515, -23, 2, -3.324));
+    alert(Math.min(2, 3, 5.215, 3.325123515, -23, 2, -3.324));
 }

@@ -34,6 +34,7 @@ input {
   font-size: large;
   transition: 200ms;
   border-radius: 5px;
+  border: solid 1px darkblue;
 }
 input:hover {
   border-color: darkviolet;
