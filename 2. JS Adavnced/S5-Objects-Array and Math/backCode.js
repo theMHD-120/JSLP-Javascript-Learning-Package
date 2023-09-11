@@ -23,11 +23,11 @@ function arrayObject() {
     alert(carsArray1.indexOf("bugatti"));
     /*
         Ok? this is like the indexOf() method on strings;
-        It works for array elements (not a single letter or a substring of an element);
+        It works only for array elements (not a single letter or a substring of an element);
         ---
         Also we have the <<< lastIndexOf() >>> method for arrays;
         Like lastIndexOf() method in strings;
-        Of course with the above condition (it works for array elements...);
+        Of course, with the above condition (it works only for array elements...);
     */
 
     alert(carsArray1.join(", "));
@@ -55,11 +55,11 @@ function arrayObject() {
     */
 
     alert("Now, carsArray2 is:\n" + carsArray2);
-    alert(carsArray2.slice(2));
-    alert(carsArray2.slice(1, 3));
-    alert(carsArray2.slice(-2));
-    alert(carsArray2.slice(-3, -1));
-    alert(carsArray2.slice(-1));
+    alert(carsArray2.slice(2));       // from 3rd element (index 2) to the end;
+    alert(carsArray2.slice(1, 3));    // from 2nd element (index 1) to the 3rd element (index 2);
+    alert(carsArray2.slice(-2));      // from index -2 to the end (index -1);
+    alert(carsArray2.slice(-3, -1));  // from index -3 to the index -2;
+    alert(carsArray2.slice(-1));      // the last element;
     alert(carsArray2.slice(0) + "\n" + carsArray2);
     /*  
         Like slice() method in strings;
@@ -69,6 +69,11 @@ function arrayObject() {
             The first element of array --> carsArray2[0];
             The last element of array --> carsArray2[-1];
             Check out the other examples;
+
+        If length of array is --> l = array.length:
+            array = [index(0)/index(-l), index(1)/index(-(l-1)), ..., index(l-2)/index(-2), index(l-1)/index(-1)];
+
+        To learn more you can read the document of JavaScript or Python array;
     */
 
     var carsArray3 = ["Tesla", "Jac", "Mazda", "Toyota", "Nissan", "Ford"];
@@ -80,7 +85,7 @@ function arrayObject() {
         Replacing "Mazda", "Toyota" and "Nissan" with ...
         "Honda", "Chevrolet", "Suzuki" (in order);
         ---
-        You can test some more examples anout splice() method;
+        You can test some more examples about splice() method;
     */
 
     alert(carsArray3.toString());
@@ -92,7 +97,7 @@ function arrayObject() {
 
     // Stack data structure with aaray object ----------------------------------------------
     /*
-        To learn about stack data structure, see the following links:
+        To learn about stack data structure, you can see the following links:
             https://www.geeksforgeeks.org/stack-data-structure
             https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
 
@@ -114,14 +119,14 @@ function arrayObject() {
     firstElement = carsArray1.shift();
     alert("The removed element (from carsArray1) is:\n" + firstElement);
     /*
-        All array elements are shifted to the left (one home (or index));
-        9 --> 8;
-        8 --> 7;
-        ...
-        1 --> 0;
-        0 (first index) is returned;
-        It (first index) removed from the array;
-        ...
+        arrayName.shift();
+            All array elements are shifted to the left (one home (or index));
+            9 --> 8;
+            8 --> 7;
+            ...
+            1 --> 0;
+            0 (first index or element) is returned and removed from the array;
+        ---
         This feature can be used to make a queue data struncture;
         Learn about queue data structure:
             https://www.geeksforgeeks.org/queue-data-structure/;   
