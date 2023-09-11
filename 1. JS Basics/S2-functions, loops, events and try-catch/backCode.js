@@ -142,3 +142,7 @@ function trycatch() {
         // error.message --> shows syntax, runtime or another errors ...
     }
 }
+
+
+
+// The end of JS Basics part -------------------------------------------------------------------

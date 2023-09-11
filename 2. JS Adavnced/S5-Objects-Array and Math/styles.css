@@ -27,3 +27,16 @@ input {
   box-shadow: rgba(0, 0, 0, 0.592) 3px 3px 4px;
   text-shadow: rgba(0, 0, 0, 0.592) 2px 1px 3px;
 }
+
+input {
+  width: 250px;
+  height: 30px;
+  font-size: large;
+  transition: 200ms;
+  border-radius: 5px;
+}
+input:hover {
+  border-color: darkviolet;
+  box-shadow: rgba(0, 0, 0, 0.592) 3px 3px 4px;
+  text-shadow: rgba(0, 0, 0, 0.592) 1px 1px 3px;
+}

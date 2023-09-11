@@ -141,6 +141,63 @@ function arrayObject() {
 function mathObject() {
 
     /*
-    Everything is static;
+        Everything is static;
+        Attention: we don't create any object from the math class;
+        ---
+        Here are some mathematical methods of Math class;
+        You can try some of them yourself;
     */
+
+
+    // The e(neper) number, pi number and logarithms methods -------------------------------
+    /*
+        1.E --> neper number, PI --> pi number;
+        2.LN2 --> natural (base-e) logarithm of 2;
+        3.LOG10E --> base-10 logarithm of e;
+        4.log10() --> a function that returns the logarithm of a number with base-10;
+    */
+    alert(Math.E);
+    alert(Math.PI);    
+    alert(Math.LN2);    
+    alert(Math.LN10);
+    alert(Math.LOG2E);
+    alert(Math.LOG10E);
+    alert(Math.log2);
+    alert(Math.log10);
+    alert(Math.log2(128));
+    alert(Math.log10(10));
+    alert(Math.log10(1000));
+
+
+    // Square root, exponential, power and trigonometric methods --------------------------
+    /*
+        5.SQRT2 --> square root of 2;
+        6.sqrt(x) --> returns the square root of x;
+        7.pow(x, y) --> returns x ^ y;
+        8.exp(x) --> returns the exponential of x (e ^ x);
+        9.trigonometric functions are based on radians;
+    */
+    alert(Math.SQRT2);
+    alert(Math.sqrt(64));
+    alert(Math.pow(5, 3));  
+    alert(Math.exp(2) + " = " + Math.pow(Math.E, 2));
+    alert(Math.cos(Math.PI));
+
+    
+    // Round and random -------------------------------------------------------------------
+    /*
+        10.round(x) --> returns the round of x (an integer);
+        11.random() --> returns a random real number between 0 and 1;
+        Note:
+            0 < Math.random() < 1;
+            If we want to get a random number between 0 and x,
+            We can use Math.random(x * Math.random());
+            0 < Math.random() < 1 --> * x --> 0 < x * Math.random() < x;
+    */
+    alert(Math.round(13.4));
+    alert(Math.round(13.5));    
+    alert(Math.round(13.6));
+    alert(Math.round(13.7653));
+    alert(Math.random());
+    alert(Math.random(4 * Math.random()));
 }
