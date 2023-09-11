@@ -73,7 +73,7 @@ function arrayObject() {
         If length of array is --> l = array.length:
             array = [index(0)/index(-l), index(1)/index(-(l-1)), ..., index(l-2)/index(-2), index(l-1)/index(-1)];
 
-        To learn more you can read the document of JavaScript or Python array;
+        To learn more you can read the document of JavaScript arrays or Python lists;
     */
 
     var carsArray3 = ["Tesla", "Jac", "Mazda", "Toyota", "Nissan", "Ford"];
