@@ -10,15 +10,17 @@ input {
 
 #part_name {
   margin: auto;
-  width: 130px;
+  width: 150px;
+  height: 47px;
   font-size: 30px;
   margin-top: 40px;
+  padding-top: 10px;
   transition: 300ms;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
   color: darkviolet;
-  border-radius: 12px;
+  border-radius: 20px;
   border: 4px red solid;
   background-color: rgb(234, 214, 243);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -33,7 +35,7 @@ input {
 
 input {
   width: 500px;
-  height: 30px;
+  height: 40px;
   font-size: large;
   transition: 200ms;
   border-radius: 5px;
@@ -43,9 +45,8 @@ input {
 input:hover {
   border-color: darkviolet;
   box-shadow: rgba(0, 0, 0, 0.592) 0px 3px 4px;
-  text-shadow: rgba(0, 0, 0, 0.592) 1px 1px 3px;
+  text-shadow: rgba(0, 0, 0, 0.592) 0px 1px 3px;
 }
 input:active {
-  
   box-shadow: rgba(0, 0, 0, 0.592) 0px 10px 50px;
 }
