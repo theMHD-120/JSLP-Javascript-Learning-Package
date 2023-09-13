@@ -47,6 +47,6 @@ function regExpObject() {
         ---
         P5 -> Retuens << true >> if there is a non-numeric (one or more) character in the word;
         Be careful; If there is even one non-numeric character, we are alerted << true >>;
-        << ^ >> --> not sign; 
+        << ^ >> --> << not >> sign; 
     */
 }
