@@ -18,7 +18,8 @@ function regExpObject() {
     var word1 = "apple";
     alert(pattern.test(word1));
     /*
-        If only one of << tshpMeHsD >> pattern letterns is
-        Existed in the word, test() method returns << true >>;
+    
+        If only one of << tshpMeHsD >> pattern letters is
+            Existed in the word, test() method returns << true >>;
     */
 }
