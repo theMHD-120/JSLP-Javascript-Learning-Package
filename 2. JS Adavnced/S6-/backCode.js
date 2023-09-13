@@ -16,10 +16,18 @@ function regExpObject() {
     // RegExp object methods -----------------------------------------------------------------------
     var pattern = /[tshpMeHsD]/
     var word1 = "apple";
+    var word2 = "html";
+
     alert(pattern.test(word1));
     /*
-    
         If only one of << tshpMeHsD >> pattern letters is
             Existed in the word, test() method returns << true >>;
     */
+
+    alert(pattern.exec(word2));
+    /*
+        Returns the first common letter between pattern and the word;
+        First letter in the word;
+    */
+    
 }
