@@ -37,10 +37,15 @@ input {
   font-size: large;
   transition: 200ms;
   border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0.7);
   border: solid 1px rgb(255, 0, 140);
 }
 input:hover {
   border-color: darkviolet;
   box-shadow: rgba(0, 0, 0, 0.592) 0px 3px 4px;
   text-shadow: rgba(0, 0, 0, 0.592) 1px 1px 3px;
+}
+input:active {
+  
+  box-shadow: rgba(0, 0, 0, 0.592) 0px 10px 50px;
 }
