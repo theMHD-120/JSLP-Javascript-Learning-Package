@@ -126,7 +126,7 @@ function regExpObject() {
         3.How does << \W >> work?
             It used to find the << non-word >> characters;
             If there is a << non-word >> character in our text, we are alerted << true >>;
-            >> This pattern is the inverse of the previous pattern (\W == ^\w)
+            >> This pattern is the inverse of the previous pattern (\W ~ ^\w)
     */
 
     var pattern9 = /\d/;
@@ -147,6 +147,6 @@ function regExpObject() {
         5.How does << \D >> work?
             It used to find the << non-digit >> characters;
             If there is a << non-digit >> character in our text, we are alerted << true >>;
-            >> This pattern is the inverse of the previous pattern (\D == ^\d)
+            >> This pattern is the inverse of the previous pattern (\D ~ ^\d)
     */
 }
