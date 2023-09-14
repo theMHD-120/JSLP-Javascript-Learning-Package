@@ -11,6 +11,11 @@ function regExpObject() {
         See the following links to learn more about regular expressions (RegExp):
             https://www.w3schools.com/js/js_regexp.asp
             https://en.wikipedia.org/wiki/Regular_expression
+        ---
+        Patterns are case-sensitive;
+        What the meaning of case-sensitive?
+            Uppercase and Lowercase letters are different;
+            For example JavaScript and javascript are different;         
     */
 
     
@@ -59,5 +64,17 @@ function regExpObject() {
             alert(pattern5.test("abc"));   --> returns << false >>;
     */  
 
-    
+
+    // RegExp - Meta Characters --------------------------------------------------------------------
+    var pattern6 = /a.i/;
+    txt1 = "Ali gets a react api for his project";
+    alert(pattern6.test(txt1));
+    alert(pattern6.exec(txt1));
+    /*
+        How it works?
+            Is there a word with type (a.i) in the txt1? (a, any character, i);
+            Any character?
+                Yes; Any character;
+                White space, &, ;, -, a letter, a number and ...;s
+    */
 }
