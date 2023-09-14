@@ -66,6 +66,10 @@ function regExpObject() {
 
 
     // RegExp - Meta Characters --------------------------------------------------------------------
+    /*
+        List of meta Characters:
+            1.Point(.);
+    */
     var pattern6 = /a.i/;
     txt1 = "Ali gets a react api for his project";
     alert(pattern6.test(txt1));
@@ -77,8 +81,14 @@ function regExpObject() {
                 Yes; Any character;
                 White space, &, ;, -, a letter, a number and ...;s
         ---
-        Note:
+        Attention:
             Ali is not in the /a.i/ type;
             But ali is :);
+        ---
+        Note:
+            /a.i/ type   --> a, any character, i;
+            /a..i/ type  --> a, any character, any character, i;
+            /a...i/ type --> a, any character, any character, any character, i;
+            and more :);
     */
 }
