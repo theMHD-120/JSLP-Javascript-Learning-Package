@@ -46,7 +46,18 @@ function regExpObject() {
         P4 -> Returns << true >> if the word contains letters (a to z and A to Z);
         ---
         P5 -> Retuens << true >> if there is a non-numeric (one or more) character in the word;
-        Be careful; If there is even one non-numeric character, we are alerted << true >>;
+        Be careful; If there is (( even one )) non-numeric character, we are alerted << true >>;
         << ^ >> --> << not >> sign; 
-    */
+        ---
+        For example:
+            pattern5 = /[^abc]/;
+            alert(pattern5.test("dfs"));   --> returns << true >>;
+            alert(pattern5.test("afd"));   --> returns << true >>;
+            alert(pattern5.test("afba"));  --> returns << true >>;
+            alert(pattern5.test("afbq"));  --> returns << true >>;
+            alert(pattern5.test("afbcq")); --> returns << true >>;
+            alert(pattern5.test("abc"));   --> returns << false >>;
+    */  
+
+    
 }
