@@ -69,7 +69,8 @@ function regExpObject() {
     /*
         List of meta Characters:
             1.Point(.);
-            2.Word Characters (\w);
+            2.Little word characters (\w);
+            3.Big word character (\W);
     */
 
     var pattern6 = /a.i/;
@@ -95,18 +96,27 @@ function regExpObject() {
     */
 
     var pattern7 = /\w/;
+    var pattern8 = /\W/;
     txt2 = "I'm 20 years old;";
-    alert(pattern7.test("txt2"));
+    alert(pattern7.test(txt2));
     alert(pattern7.exec(txt2));
+    alert(pattern8.test(txt2));
+    alert(pattern8.exec(txt2));
     /*
-        How does it work?
+        1.How does << \w >> work?
             It used to find the << word >> characters;
-            If there is a << word >> character in our text, we alerted << true >>;
+            If there is a << word >> character in our text, we are alerted << true >>;
             ---
             What is the << word >> characters?
                 a, b, c, d, ..., z (lowercase letters);
                 A, B, C, D, ..., Z (Uppercase letters);
                 0, 1, 2, 3, ..., 9 (Numeric characters (numbers));
                 and the underline << _ >> character;
+                Attention: space is not a word chracter :);
+        ---
+        2.How does << \W >> work?
+            It used to find the << non-word >> characters;
+            If there is a << non-word >> character in our text, we are alerted << true >>;
+            >> This pattern is the inverse of the previous pattern (\W == ^\w)
     */
 }
