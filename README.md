@@ -8,4 +8,4 @@ This package contains two parts and serveral sections;
 
 Prerequisites:
 
-||| JS with JS - by theMHD|||
+||| JS with JS - by theMHD |||
