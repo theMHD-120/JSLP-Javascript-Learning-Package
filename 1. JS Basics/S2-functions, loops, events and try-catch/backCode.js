@@ -8,9 +8,9 @@ function getNumbers() {
     alert(calculator(number1, number2, operator));
 
     /*
-    Differents between parseInt and eval ...
-    With parseInt we can enter a string as input (it saves inputs as NaN (not a number));
-    But with eval we cannot enter a string as input (in this state we get an error and program will be stop!);
+        Differents between parseInt and eval ...
+        With parseInt we can enter a string as input (it saves inputs as NaN (not a number));
+        But with eval we cannot enter a string as input (in this state we get an error and program will be stop!);
     */
 }
 
@@ -91,37 +91,41 @@ function txt2_unfocus() {
 
 function txt2_mouseover(self) {
     self.value = "textbox2 mouseovered;";
-    // Here, self(this) is document.getElementById("txt2_box");
+    //  Here, self(this) is document.getElementById("txt2_box");
 }
 
 function txt2_mouseout(self) {
     self.value = "";
-    // Here, self(this) is document.getElementById("txt2_box");
+    //  Here, self(this) is document.getElementById("txt2_box");
 }
 
 function txt3_keyup(e) {
-    // alert(e.keyCode);  // keyCode is like ascii code; 
+    /*
+        alert(e.keyCode);  
+        keyCode is like ascii code; 
+    */
     var counter_text = document.getElementById("counter").innerHTML;
 
-    // Note: keyCode = 8 is keycode of <back space> and keyCode = 13 is keycode of <enter>; 
+    //  Note: keyCode = 8 is keycode of <back space> and keyCode = 13 is keycode of <enter>; 
     if (e.keyCode != 8 && e.keyCode != 13)  
         document.getElementById("counter").innerHTML = Number(counter_text) + 1;
     else if (Number(document.getElementById("counter").innerHTML) != 0 && e.keyCode == 8)
         document.getElementById("counter").innerHTML = Number(counter_text) - 1;
     else if (e.keyCode == 13)
         document.getElementById("txt2_box").focus();
-    // With click enter (keyCode = 13), textbox 2 is focused; 
+    //  With click enter (keyCode = 13), textbox 2 is focused; 
 }
 
 function txt3_keydown(e) {
     /* 
-    Note: onkeyup works after entering a character ... 
-    And onkeydown attribute works before entering a character; 
+        Note: 
+            onkeyup() works after entering a character ... 
+            And onkeydown() attribute works before entering a character; 
     */
 
     if (e.keyCode == 56)
-        e.preventDefault();  // it prevents defult action (entering);
-    // In this function we want to prevent entering if *(star) character entered (ascii code of * is 56);
+        e.preventDefault();  // it prevents the default action (entering);
+    //  In this function we want to prevent entering if << *(star) >> character entered (ascii code of << * >> is 56);
 }
 
 function submit_data() {
@@ -139,10 +143,10 @@ function trycatch() {
         alertt("System is worked correctly;");
     } catch (error) {
         alert("System is not worked!\nServer error: " + error.message);  
-        // error.message --> shows syntax, runtime or another errors ...
+        //  error.message --> shows syntax, runtime or another errors ...
     }
 }
 
 
 
-// The end of JS Basics part -------------------------------------------------------------------
+// The end of JS Basics part -----------------------------------------------------------------------------------------
