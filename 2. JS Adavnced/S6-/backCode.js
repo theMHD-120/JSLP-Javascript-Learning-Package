@@ -74,9 +74,12 @@ function regExpObject() {
     // RegExp - Meta Characters --------------------------------------------------------------------
     /*
         List of meta Characters:
-            1.Point(.);
+            1.Point (.);
             2.Little word characters (\w);
-            3.Big word character (\W);
+            3.Big word characters (\W);
+            4.little Digit  characters(\d);
+            5.Big digit characters (\D);
+
     */
 
     var pattern6 = /a.i/;
@@ -84,7 +87,7 @@ function regExpObject() {
     alert(pattern6.test(txt1));
     alert(pattern6.exec(txt1));
     /*
-        How it works?
+        1.How it works?
             Is there a word with type (a.i) in the txt1? (a, any character, i);
             Any character?
                 Yes; Any character;
@@ -109,7 +112,7 @@ function regExpObject() {
     alert(pattern8.test(txt2));
     alert(pattern8.exec(txt2));
     /*
-        1.How does << \w >> work?
+        2.How does << \w >> work?
             It used to find the << word >> characters;
             If there is a << word >> character in our text, we are alerted << true >>;
             ---
@@ -120,9 +123,30 @@ function regExpObject() {
                 and the underline << _ >> character;
                 Attention: space is not a word chracter :);
         ---
-        2.How does << \W >> work?
+        3.How does << \W >> work?
             It used to find the << non-word >> characters;
             If there is a << non-word >> character in our text, we are alerted << true >>;
             >> This pattern is the inverse of the previous pattern (\W == ^\w)
+    */
+
+    var pattern9 = /\d/;
+    var pattern10 = /\D/;
+    alert(pattern9.test(txt2));
+    alert(pattern9.exec(txt2));
+    alert(pattern10.test(txt2));
+    alert(pattern10.exec(txt2));
+    /*
+        4.How does << \d >> work?
+            It used to find the << digit >> characters;
+            If there is a << digit >> character in our text, we are alerted << true >>;
+            ---
+            What is the << digit >> characters?
+                0, 1, 2, 3, ..., 9 (Numeric characters (numbers));
+                >> One digi; Not a multi-digit number;
+        ---
+        5.How does << \D >> work?
+            It used to find the << non-digit >> characters;
+            If there is a << non-digit >> character in our text, we are alerted << true >>;
+            >> This pattern is the inverse of the previous pattern (\D == ^\d)
     */
 }
