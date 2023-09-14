@@ -76,5 +76,9 @@ function regExpObject() {
             Any character?
                 Yes; Any character;
                 White space, &, ;, -, a letter, a number and ...;s
+        ---
+        Note:
+            Ali is not in the /a.i/ type;
+            But ali is :);
     */
 }
