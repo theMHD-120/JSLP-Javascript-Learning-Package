@@ -40,10 +40,10 @@ input {
   transition: 200ms;
   border-radius: 5px;
   background-color:rgba(255, 255, 255, 0.7);
-  border: solid 1px rgb(255, 0, 140);
+  border: solid 1px darkviolet;
 }
 input:hover {
-  border-color: darkviolet;
+  border: none;
   box-shadow: rgba(0, 0, 0, 0.592) 0px 3px 4px;
   text-shadow: rgba(0, 0, 0, 0.592) 0px 1px 3px;
 }
