@@ -69,7 +69,9 @@ function regExpObject() {
     /*
         List of meta Characters:
             1.Point(.);
+            2.Word Characters (\w);
     */
+
     var pattern6 = /a.i/;
     txt1 = "Ali gets a react api for his project";
     alert(pattern6.test(txt1));
@@ -90,5 +92,21 @@ function regExpObject() {
             /a..i/ type  --> a, any character, any character, i;
             /a...i/ type --> a, any character, any character, any character, i;
             and more :);
+    */
+
+    var pattern7 = /\w/;
+    txt2 = "I'm 20 years old;";
+    alert(pattern7.test("txt2"));
+    alert(pattern7.exec(txt2));
+    /*
+        How does it work?
+            It used to find the << word >> characters;
+            If there is a << word >> character in our text, we alerted << true >>;
+            ---
+            What is the << word >> characters?
+                a, b, c, d, ..., z (lowercase letters);
+                A, B, C, D, ..., Z (Uppercase letters);
+                0, 1, 2, 3, ..., 9 (Numeric characters (numbers));
+                and the underline << _ >> character;
     */
 }
