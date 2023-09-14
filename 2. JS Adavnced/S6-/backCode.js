@@ -25,8 +25,11 @@ function regExpObject() {
     var word1 = "apple";
     alert(pattern1.test(word1));
     /*
-        If only one of << tshpMeHsD >> pattern letters is
-            Existed in the word, test() method returns << true >>;
+        If even one of << apple >> word letters is
+            Existed in the pattern1, test() method returns << true >>;
+        ---
+        In the next patterns, if there is a common feature between 
+            The word and the pattern, test() method returns << true >>;
     */
 
     var word2 = "html";
@@ -34,6 +37,9 @@ function regExpObject() {
     /*
         Returns the first common letter between pattern and the word;
         First letter in the word;
+        ---
+        In the next patterns, if test() method returns << true >>,
+            exec() method returns the first letter or character that has the common feature;
     */
     
     var word3 = "MHD120";
