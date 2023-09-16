@@ -1,5 +1,5 @@
 // Part 14 ------------------------------------------------------------------------------------------------------------
-// JavaScript Objects - Regular expressions (RegExp);
+// JavaScript Objects - Regular expressions (RegExp (regex));
 
 function regExpObject() {
 
@@ -18,9 +18,10 @@ function regExpObject() {
             For example JavaScript and javascript are different;         
     */
 
-    
-    // RegExp object methods -----------------------------------------------------------------------
+
+    // RegExp (regex) object methods ---------------------------------------------------------------
     var pattern1 = /[tshpMeHsD]/;
+    alert("RegExp (regex) - Methods");
     
     var word1 = "apple";
     alert(pattern1.test(word1));
@@ -71,7 +72,7 @@ function regExpObject() {
     */  
 
 
-    // RegExp - Meta Characters --------------------------------------------------------------------
+    // RegExp (regex) - Meta Characters ------------------------------------------------------------
     /*
         List of meta characters:
             1.Point (.);
@@ -84,6 +85,7 @@ function regExpObject() {
             8.little b characters (\b);
             9.Big B characters (\B);
     */
+    alert("RegExp (regex) - Meta Characters");
 
     var pattern6 = /a.i/;
     var txt1 = "Ali gets a react api for his project";
@@ -195,7 +197,9 @@ function regExpObject() {
     */
 
 
-    // RegExp - Meta Characters - Pracitce ---------------------------------------------------------
+    // RegExp (regex) - Meta Characters - Pracitce -------------------------------------------------
+    alert("RegExp (regex) - Meta Characters - Practice");
+
     var practicePattern = /[^ا-یa-zA-Z]/;
     var name1 = prompt("Enter your name: ");
     if(!practicePattern.test(name1)) 
@@ -209,20 +213,22 @@ function regExpObject() {
     */
 
 
-    // RegExp - The Quantifiers --------------------------------------------------------------------
+    // RegExp (regex) - The Quantifiers ------------------------------------------------------------
     /*
         List of quantifiers:
             1.\<< any character >>+
             2.\<< any character >>?
     */
+    alert("RegExp (regex) - The Quantifiers");
 
-    var pattern15 = /\n+/;
-    var pattern16 = /\'+/;
-    var pattern17 = /\I+/;
-    var pattern18 = /\d+/;
-    var pattern19 = /\;+/;
+    var pattern15 = /n+/;
+    var pattern16 = /'+/;
+    var pattern17 = /I+/;
+    var pattern18 = /;+/;
+    var pattern19 = / +/;
+    var pattern20 = /p+/;
     var txt4 = "What's your name? I am mahdi;";
-    alert("AAA" + pattern15.test(txt4));
+    alert(pattern15.test(txt4));
     alert(pattern15.exec(txt4));
     alert(pattern16.test(txt4));
     alert(pattern16.exec(txt4));
@@ -232,6 +238,20 @@ function regExpObject() {
     alert(pattern18.exec(txt4));
     alert(pattern19.test(txt4));
     alert(pattern19.exec(txt4));
+    alert(pattern20.test(txt4));
+    alert(pattern20.exec(txt4));
+    /*
+        1.How does << \(any character)+ >> work?
+            If there is a pattern (substring) with a character and something in the continuation of that...
+                (Or only one character with nothing in continuation) in a text, we are alerted << true >>;
+        ---
+        In the above examples, there is no pattern for pattern20 in the txt4; 
+    */
+
+    var pattern20 = /10?/;
+    var txt5 = "What's your name? I am mahdi;";
+    alert("AAA" + pattern15.test(txt5));
+    alert(pattern15.exec(txt5));
     /*
         1.How does << \(a character)+ >> work?
             If there is a substring with a character and something in the continuation of that,
@@ -239,11 +259,11 @@ function regExpObject() {
     */
 }
 
-var pattern15 = /\W+/;
-var pattern16 = /\'+/;
-var pattern17 = /\I+/;
-var pattern18 = /\d+/;
-var pattern19 = /\;+/;
+var pattern15 = /W+/;
+var pattern16 = /'+/;
+var pattern17 = /I+/;
+var pattern18 = /d+/;
+var pattern19 = /;+/;
 var txt3 = "What's your name? I am mahdi;";
 alert("AAA" + pattern15.test(txt3));
 alert(pattern15.exec(txt3));
