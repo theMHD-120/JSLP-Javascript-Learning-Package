@@ -114,7 +114,7 @@ function regExpObject() {
     /*
         2.How does << \w >> work?
             It used to find the << word >> characters;
-            If there is a << word >> character in our text, we are alerted << true >>;
+            If there is one (or more) << word >> character in our text, we are alerted << true >>;
             ---
             What is the << word >> characters?
                 a, b, c, d, ..., z (lowercase letters);
@@ -125,7 +125,7 @@ function regExpObject() {
         ---
         3.How does << \W >> work?
             It used to find the << non-word >> characters;
-            If there is a << non-word >> character in our text, we are alerted << true >>;
+            If there is one (or more) << non-word >> character in our text, we are alerted << true >>;
             >> This pattern is the inverse of the previous pattern (\W ~ ^\w)
     */
 
@@ -138,7 +138,7 @@ function regExpObject() {
     /*
         4.How does << \d >> work?
             It used to find the << digit >> characters;
-            If there is a << digit >> character in our text, we are alerted << true >>;
+            If there is one (or more) << digit >> character in our text, we are alerted << true >>;
             ---
             What is the << digit >> characters?
                 0, 1, 2, 3, ..., 9 (Numeric characters (numbers));
@@ -146,7 +146,19 @@ function regExpObject() {
         ---
         5.How does << \D >> work?
             It used to find the << non-digit >> characters;
-            If there is a << non-digit >> character in our text, we are alerted << true >>;
+            If there is one (or more) << non-digit >> character in our text, we are alerted << true >>;
             >> This pattern is the inverse of the previous pattern (\D ~ ^\d)
+    */
+
+    var pattern12 = /[^ا-یa-zA-Z]/;
+    var name1 = prompt("Enter your name: ");
+    if(!pattern12.test(name1)) 
+        alert("Your name is valid;");
+    else
+        alert("Your name is invalid;");
+    /*
+        A short practice for validation of username;
+        For persian and english words (lowercase and uppercase);
+        Try and change it yourself :);
     */
 }
