@@ -6,7 +6,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 ![by theMHD](JLPLogo.png)
 
 Learning javascript with javascript codes :)
-This package contains two parts and serveral sections;
+This package contains two parts and serveral sections.
 
 Prerequisites:
 
