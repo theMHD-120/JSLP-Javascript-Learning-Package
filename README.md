@@ -6,6 +6,8 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 Learning javascript with javascript codes :)
 This package contains two parts and serveral sections;
 
+# G:\JSwebpractices\JLPLogo.png
+
 Prerequisites:
 
 ||| JS with JS - by theMHD |||
