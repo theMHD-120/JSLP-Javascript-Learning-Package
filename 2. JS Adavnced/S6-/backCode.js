@@ -159,6 +159,6 @@ function regExpObject() {
     /*
         A short practice for validation of username;
         For persian and english words (lowercase and uppercase);
-        Try and change it yourself :);
+        Try and change it yourself (for example for password (with numbers), email or ...);
     */
 }
