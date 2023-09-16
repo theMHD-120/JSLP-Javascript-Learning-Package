@@ -73,7 +73,7 @@ function regExpObject() {
 
     // RegExp - Meta Characters --------------------------------------------------------------------
     /*
-        List of meta Characters:
+        List of meta characters:
             1.Point (.);
             2.Little word characters (\w);
             3.Big word characters (\W);
@@ -176,7 +176,7 @@ function regExpObject() {
     var pattern13 = /\bjava/;
     var pattern14 = /\Bear/;
     var txt3 = "Here is the javascript learning package;";
-    alert("aaa" + pattern13.test(txt3));
+    alert(pattern13.test(txt3));
     alert(pattern13.exec(txt3));
     alert(pattern14.test(txt3));
     alert(pattern14.exec(txt3));
@@ -193,7 +193,7 @@ function regExpObject() {
                 A word in a text (for example txt3) doesn't begin...
                     Or doesn't end with "ear"; But it contains "ear";
     */
-    
+
 
     // RegExp - Meta Characters - Pracitce ---------------------------------------------------------
     var practicePattern = /[^ا-یa-zA-Z]/;
@@ -207,4 +207,51 @@ function regExpObject() {
         For persian and english words (lowercase and uppercase);
         Try and change it yourself (for example for password (with numbers), email or ...);
     */
+
+
+    // RegExp - The Quantifiers --------------------------------------------------------------------
+    /*
+        List of quantifiers:
+            1.\<< any character >>+
+            2.\<< any character >>?
+    */
+
+    var pattern15 = /\n+/;
+    var pattern16 = /\'+/;
+    var pattern17 = /\I+/;
+    var pattern18 = /\d+/;
+    var pattern19 = /\;+/;
+    var txt4 = "What's your name? I am mahdi;";
+    alert("AAA" + pattern15.test(txt4));
+    alert(pattern15.exec(txt4));
+    alert(pattern16.test(txt4));
+    alert(pattern16.exec(txt4));
+    alert(pattern17.test(txt4));
+    alert(pattern17.exec(txt4));
+    alert(pattern18.test(txt4));
+    alert(pattern18.exec(txt4));
+    alert(pattern19.test(txt4));
+    alert(pattern19.exec(txt4));
+    /*
+        1.How does << \(a character)+ >> work?
+            If there is a substring with a character and something in the continuation of that,
+                We are alerted << true >>;
+    */
 }
+
+var pattern15 = /\W+/;
+var pattern16 = /\'+/;
+var pattern17 = /\I+/;
+var pattern18 = /\d+/;
+var pattern19 = /\;+/;
+var txt3 = "What's your name? I am mahdi;";
+alert("AAA" + pattern15.test(txt3));
+alert(pattern15.exec(txt3));
+alert(pattern16.test(txt3));
+alert(pattern16.exec(txt3));
+alert(pattern17.test(txt3));
+alert(pattern17.exec(txt3));
+alert(pattern18.test(txt3));
+alert(pattern18.exec(txt3));
+alert(pattern19.test(txt3));
+alert(pattern19.exec(txt3));
