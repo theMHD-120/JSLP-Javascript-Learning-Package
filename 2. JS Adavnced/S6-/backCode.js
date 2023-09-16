@@ -79,11 +79,13 @@ function regExpObject() {
             3.Big word characters (\W);
             4.little Digit  characters(\d);
             5.Big digit characters (\D);
+            6.little Digit  characters(\s);
+            7.Big digit characters (\S);
 
     */
 
     var pattern6 = /a.i/;
-    txt1 = "Ali gets a react api for his project";
+    var txt1 = "Ali gets a react api for his project";
     alert(pattern6.test(txt1));
     alert(pattern6.exec(txt1));
     /*
@@ -106,7 +108,7 @@ function regExpObject() {
 
     var pattern7 = /\w/;
     var pattern8 = /\W/;
-    txt2 = "I'm 20 years old;";
+    var txt2 = "I'm 20 years old;";
     alert(pattern7.test(txt2));
     alert(pattern7.exec(txt2));
     alert(pattern8.test(txt2));
@@ -114,7 +116,7 @@ function regExpObject() {
     /*
         2.How does << \w >> work?
             It used to find the << word >> characters;
-            If there is one (or more) << word >> character in our text, we are alerted << true >>;
+            If there is one (or more) << word >> character(s) in our text, we are alerted << true >>;
             ---
             What is the << word >> characters?
                 a, b, c, d, ..., z (lowercase letters);
@@ -125,7 +127,7 @@ function regExpObject() {
         ---
         3.How does << \W >> work?
             It used to find the << non-word >> characters;
-            If there is one (or more) << non-word >> character in our text, we are alerted << true >>;
+            If there is one (or more) << non-word >> character(s) in our text, we are alerted << true >>;
             >> This pattern is the inverse of the previous pattern (\W ~ ^\w)
     */
 
@@ -138,11 +140,11 @@ function regExpObject() {
     /*
         4.How does << \d >> work?
             It used to find the << digit >> characters;
-            If there is one (or more) << digit >> character in our text, we are alerted << true >>;
+            If there is one (or more) << digit >> character(s) in our text, we are alerted << true >>;
             ---
             What is the << digit >> characters?
                 0, 1, 2, 3, ..., 9 (Numeric characters (numbers));
-                >> One digi; Not a multi-digit number;
+                Attention: One digi; Not a multi-digit number;
         ---
         5.How does << \D >> work?
             It used to find the << non-digit >> characters;
@@ -150,9 +152,29 @@ function regExpObject() {
             >> This pattern is the inverse of the previous pattern (\D ~ ^\d)
     */
 
-    var pattern12 = /[^ا-یa-zA-Z]/;
+    var pattern11 = /\s/;
+    var pattern12 = /\s/;
+    alert(pattern11.test(txt2));
+    alert(pattern11.exec(txt2));
+    alert(pattern12.test(txt2));
+    alert(pattern12.exec(txt2));
+    /*
+        6.How does << \d >> work?
+            It used to find the << whitespace >> characters;
+            If there is one (or more) << whitespace >> character(s) in our text, we are alerted << true >>;
+            ---
+            What is the << whitespace >> characters?
+                one space << ' ' >>, tab (4 to 5 spaces) << '    ' >>, new line << '\n' >> and ... 
+        ---
+        7.How does << \D >> work?
+            It used to find the << non-whitespaces >> characters;
+            If there is one (or more) << non-whitespaces >> character(s) in our text, we are alerted << true >>;
+            >> This pattern is the inverse of the previous pattern (\S ~ ^\s)
+    */
+
+    var practicePattern = /[^ا-یa-zA-Z]/;
     var name1 = prompt("Enter your name: ");
-    if(!pattern12.test(name1)) 
+    if(!practicePattern.test(name1)) 
         alert("Your name is valid;");
     else
         alert("Your name is invalid;");
