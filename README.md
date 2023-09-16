@@ -3,7 +3,7 @@
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
 # JLP-javascript-learning-package
 
-![by theMHD](JLPlogo.png)
+![JLP-javascript learning package /// by theMHD](JLPlogo.png)
 
 Learning javascript with javascript codes :)
 This package contains two parts and serveral sections.
