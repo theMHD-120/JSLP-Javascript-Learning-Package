@@ -61,13 +61,13 @@ function regExpObject() {
         << ^ >> --> << not >> sign; 
         ---
         For example:
-            pattern5 = /[^abc]/;
-            alert(pattern5.test("dfs"));   --> returns << true >>;
-            alert(pattern5.test("afd"));   --> returns << true >>;
-            alert(pattern5.test("afba"));  --> returns << true >>;
-            alert(pattern5.test("afbq"));  --> returns << true >>;
-            alert(pattern5.test("afbcq")); --> returns << true >>;
-            alert(pattern5.test("abc"));   --> returns << false >>;
+            If pattern5 = /[^abc]/ :
+                alert(pattern5.test("dfs"));   --> returns << true >>;
+                alert(pattern5.test("afd"));   --> returns << true >>;
+                alert(pattern5.test("afba"));  --> returns << true >>;
+                alert(pattern5.test("afbq"));  --> returns << true >>;
+                alert(pattern5.test("afbcq")); --> returns << true >>;
+                alert(pattern5.test("abc"));   --> returns << false >>;
     */  
 
 
@@ -77,11 +77,12 @@ function regExpObject() {
             1.Point (.);
             2.Little word characters (\w);
             3.Big word characters (\W);
-            4.little Digit  characters(\d);
+            4.little Digit characters(\d);
             5.Big digit characters (\D);
-            6.little Digit  characters(\s);
-            7.Big digit characters (\S);
-
+            6.little sapce characters (\s);
+            7.Big space characters (\S);
+            8.little b characters (\b);
+            9.Big B characters (\B);
     */
 
     var pattern6 = /a.i/;
@@ -159,19 +160,42 @@ function regExpObject() {
     alert(pattern12.test(txt2));
     alert(pattern12.exec(txt2));
     /*
-        6.How does << \d >> work?
+        6.How does << \s >> work?
             It used to find the << whitespace >> characters;
             If there is one (or more) << whitespace >> character(s) in our text, we are alerted << true >>;
             ---
             What is the << whitespace >> characters?
                 one space << ' ' >>, tab (4 to 5 spaces) << '    ' >>, new line << '\n' >> and ... 
         ---
-        7.How does << \D >> work?
+        7.How does << \S >> work?
             It used to find the << non-whitespaces >> characters;
             If there is one (or more) << non-whitespaces >> character(s) in our text, we are alerted << true >>;
             >> This pattern is the inverse of the previous pattern (\S ~ ^\s)
     */
 
+    var pattern13 = /\bjava/;
+    var pattern14 = /\Bear/;
+    var txt3 = "Here is the javascript learning package;";
+    alert("aaa" + pattern13.test(txt3));
+    alert(pattern13.exec(txt3));
+    alert(pattern14.test(txt3));
+    alert(pattern14.exec(txt3));
+    /*
+        8.How does << \b... >> work (explanation with example)?
+            In the first pattern (pattern13), if there is one (or more)...
+                Word(s) starting with "java", we are alerted << true >>;
+            Ok? this meta character checks the start of the words in a text;
+        ---
+        9.How does << \B... >> work (explanation with example)? 
+            In the second pattern (pattern14), if there is one (or more)...
+                Word(s) containing "ear" in the middle, we are alerted << true >>;
+            What does "In the middle" meaning? 
+                A word in a text (for example txt3) does not begin...
+                    Or end with "ear"; But it contains "ear";
+    */
+    
+
+    // RegExp - Meta Characters - Pracitce ---------------------------------------------------------
     var practicePattern = /[^ا-یa-zA-Z]/;
     var name1 = prompt("Enter your name: ");
     if(!practicePattern.test(name1)) 
