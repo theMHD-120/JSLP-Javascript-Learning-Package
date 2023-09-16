@@ -190,8 +190,8 @@ function regExpObject() {
             In the second pattern (pattern14), if there is one (or more)...
                 Word(s) containing "ear" in the middle, we are alerted << true >>;
             What does "In the middle" meaning? 
-                A word in a text (for example txt3) does not begin...
-                    Or end with "ear"; But it contains "ear";
+                A word in a text (for example txt3) doesn't begin...
+                    Or doesn't end with "ear"; But it contains "ear";
     */
     
 
