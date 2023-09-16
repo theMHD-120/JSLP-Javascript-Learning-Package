@@ -6,7 +6,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 Learning javascript with javascript codes :)
 This package contains two parts and serveral sections;
 
-# G:\JSwebpractices\JLPLogo.png
+![alt text](JLPLogo.png)
 
 Prerequisites:
 
