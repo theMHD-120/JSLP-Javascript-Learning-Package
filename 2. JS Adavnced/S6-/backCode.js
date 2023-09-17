@@ -222,6 +222,7 @@ function regExpObject() {
             4.\d{start (n), end (m)};
             5.\d{start (n),};
             6.<< any character(s) >>$;
+            7.^<< any character(s) >>;
     */
     alert("RegExp (regex) - The Quantifiers");
 
@@ -325,22 +326,23 @@ function regExpObject() {
 
     var pattern27 = /e$/;
     var pattern28 = /ye$/;
-    var txt8 = "Good bye";
+    var pattern29 = /^G/;
+    var pattern30 = /^[a-zA-Z]/;
+    var txt8 = "0Good bye";
     alert(pattern27.test(txt8));
     alert(pattern27.exec(txt8));
     alert(pattern28.test(txt8));
     alert(pattern28.exec(txt8));
+    alert(pattern29.test(txt8));
+    alert(pattern29.exec(txt8));
+    alert(pattern30.test(txt8));
+    alert(pattern30.exec(txt8));
     /*
-        5.What does << (any character(s))$ >> do?
-            If a text or a word (as a string) ended with our pattern, we are alerted << true >>;
-            So it used to check the end of a text or a word;
+        6.What does << (any character(s))$ >> do?
+            If a text or a word (as a string) ends with our pattern, we are alerted << true >>;
+            So it used to check the end of a text or a word with a pattern;
+        7.What does << ^(any character(s)) >> do?
+            If a text or a word (as a string) starts with our pattern, we are alerted << true >>;
+            So it used to check the start of a text or a word with a pattern;
     */
 }
-
-var pattern27 = /e$/;
-var pattern28 = /ye$/;
-var txt8 = "Good bye";
-alert(pattern27.test(txt8));
-alert(pattern27.exec(txt8));
-alert(pattern28.test(txt8));
-alert(pattern28.exec(txt8));
