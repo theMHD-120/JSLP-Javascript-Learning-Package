@@ -220,6 +220,8 @@ function regExpObject() {
             2.<< any character(s) >>?;
             3.\d{number of digits (n)};
             4.\d{start (n), end (m)};
+            5.\d{start (n),};
+            6.<< any character(s) >>$;
     */
     alert("RegExp (regex) - The Quantifiers");
 
@@ -294,19 +296,19 @@ function regExpObject() {
     alert(pattern24.test(txt7));
     alert(pattern24.exec(txt7));
     alert("||| Pattern 25 |||");
-    alert(pattern24.test(txt5));
-    alert(pattern24.exec(txt5));
-    alert(pattern24.test(txt6));
-    alert(pattern24.exec(txt6));
-    alert(pattern24.test(txt7));
-    alert(pattern24.exec(txt7));
+    alert(pattern25.test(txt5));
+    alert(pattern25.exec(txt5));
+    alert(pattern25.test(txt6));
+    alert(pattern25.exec(txt6));
+    alert(pattern25.test(txt7));
+    alert(pattern25.exec(txt7));
     alert("||| Pattern 26 |||");
-    alert(pattern24.test(txt5));
-    alert(pattern24.exec(txt5));
-    alert(pattern24.test(txt6));
-    alert(pattern24.exec(txt6));
-    alert(pattern24.test(txt7));
-    alert(pattern24.exec(txt7));
+    alert(pattern26.test(txt5));
+    alert(pattern26.exec(txt5));
+    alert(pattern26.test(txt6));
+    alert(pattern26.exec(txt6));
+    alert(pattern26.test(txt7));
+    alert(pattern26.exec(txt7));
     /*
         3.What does << \d{number of digits (n)} >> do?
             It used to find the << n-digit(s) >> numbers;
@@ -315,5 +317,30 @@ function regExpObject() {
         4.What does << \d{start(n), end(m)} >> do?
             It used to find the << n-digit(s) >> to << m-digit(s) >> numbers;
             Minimum --> << n-digit(s) >> /// Maximum --> << m-digit(s) >> numbers;
+        ---
+        5.What does << \d{start(n),} >> do?
+            It used to find the << n-digit(s) >> numbers and higher;
+            Minimum --> << n-digit(s) >> /// Maximum --> unlimited :);
+    */
+
+    var pattern27 = /e$/;
+    var pattern28 = /ye$/;
+    var txt8 = "Good bye";
+    alert(pattern27.test(txt8));
+    alert(pattern27.exec(txt8));
+    alert(pattern28.test(txt8));
+    alert(pattern28.exec(txt8));
+    /*
+        5.What does << (any character(s))$ >> do?
+            If a text or a word (as a string) ended with our pattern, we are alerted << true >>;
+            So it used to check the end of a text or a word;
     */
 }
+
+var pattern27 = /e$/;
+var pattern28 = /ye$/;
+var txt8 = "Good bye";
+alert(pattern27.test(txt8));
+alert(pattern27.exec(txt8));
+alert(pattern28.test(txt8));
+alert(pattern28.exec(txt8));
