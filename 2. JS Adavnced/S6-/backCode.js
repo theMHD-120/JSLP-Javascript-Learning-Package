@@ -328,7 +328,7 @@ function regExpObject() {
     var pattern28 = /ye$/;
     var pattern29 = /^G/;
     var pattern30 = /^[a-zA-Z]/;
-    var txt8 = "0Good bye";
+    var txt8 = "Good bye";
     alert(pattern27.test(txt8));
     alert(pattern27.exec(txt8));
     alert(pattern28.test(txt8));
