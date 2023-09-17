@@ -219,7 +219,7 @@ function regExpObject() {
             1.<< any character(s) >>+;
             2.<< any character(s) >>?;
             3.\d{number of digits (n)};
-            4.\d{start (n), end (m)};
+            4.\d{start (n),end (m)};
             5.\d{start (n),};
             6.<< any character(s) >>$;
             7.^<< any character(s) >>;
@@ -235,20 +235,28 @@ function regExpObject() {
     var pattern21 = /our+/;
     var pattern22 = /p+/;
     var txt4 = "What's your name? I am mahdi;";
+    alert("||| Pattern 15 |||");
     alert(pattern15.test(txt4));
     alert(pattern15.exec(txt4));
+    alert("||| Pattern 16 |||");
     alert(pattern16.test(txt4));
     alert(pattern16.exec(txt4));
+    alert("||| Pattern 17 |||");
     alert(pattern17.test(txt4));
     alert(pattern17.exec(txt4));
+    alert("||| Pattern 18 |||");
     alert(pattern18.test(txt4));
     alert(pattern18.exec(txt4));
+    alert("||| Pattern 19 |||");
     alert(pattern19.test(txt4));
     alert(pattern19.exec(txt4));
+    alert("||| Pattern 20 |||");
     alert(pattern20.test(txt4));
     alert(pattern20.exec(txt4));
+    alert("||| Pattern 21 |||");
     alert(pattern21.test(txt4));
     alert(pattern21.exec(txt4));
+    alert("||| Pattern 22 |||");
     alert(pattern22.test(txt4));
     alert(pattern22.exec(txt4));
     /*
@@ -265,6 +273,7 @@ function regExpObject() {
     var word6 = "120";
     var word7 = "12";
     var word8 = "1";
+    alert("||| Pattern 23 |||");
     alert(pattern23.test(word4));
     alert(pattern23.exec(word4));
     alert(pattern23.test(word5));
@@ -284,7 +293,7 @@ function regExpObject() {
     */
 
     var pattern24 = /\d{8}/;
-    var pattern25 = /\d{4, 8}/;
+    var pattern25 = /\d{4,8}/;
     var pattern26 = /\d{7,}/;
     var txt5 = "This is a nine-digits number: 120000000";
     var txt6 = "This is a seven-digits number: 1200000";
@@ -327,16 +336,24 @@ function regExpObject() {
     var pattern27 = /e$/;
     var pattern28 = /ye$/;
     var pattern29 = /^G/;
-    var pattern30 = /^[a-zA-Z]/;
+    var pattern30 = /^Goo/;
+    var pattern31 = /^[a-zA-Z]/;
     var txt8 = "Good bye";
+    alert("||| Pattern 27 |||");
     alert(pattern27.test(txt8));
     alert(pattern27.exec(txt8));
+    alert("||| Pattern 28 |||");
     alert(pattern28.test(txt8));
     alert(pattern28.exec(txt8));
+    alert("||| Pattern 29 |||");
     alert(pattern29.test(txt8));
     alert(pattern29.exec(txt8));
+    alert("||| Pattern 30 |||");
     alert(pattern30.test(txt8));
     alert(pattern30.exec(txt8));
+    alert("||| Pattern 31 |||");
+    alert(pattern31.test(txt8));
+    alert(pattern31.exec(txt8));
     /*
         6.What does << (any character(s))$ >> do?
             If a text or a word (as a string) ends with our pattern, we are alerted << true >>;
