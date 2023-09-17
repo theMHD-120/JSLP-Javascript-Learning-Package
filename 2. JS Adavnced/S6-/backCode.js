@@ -147,7 +147,7 @@ function regExpObject() {
             ---
             What is the << digit >> characters?
                 0, 1, 2, 3, ..., 9 (Numeric characters (numbers));
-                Attention: One digi; Not a multi-digit number;
+                Attention: One digit; Not a multi-digit number;
         ---
         5.How does << \D >> work?
             It used to find the << non-digit >> characters;
@@ -216,8 +216,10 @@ function regExpObject() {
     // RegExp (regex) - The Quantifiers ------------------------------------------------------------
     /*
         List of quantifiers:
-            1.\<< any character >>+
-            2.\<< any character >>?
+            1.<< any character(s) >>+;
+            2.<< any character(s) >>?;
+            3.\d{number of digits (n)};
+            4.\d{start (n), end (m)};
     */
     alert("RegExp (regex) - The Quantifiers");
 
@@ -226,7 +228,9 @@ function regExpObject() {
     var pattern17 = /I+/;
     var pattern18 = /;+/;
     var pattern19 = / +/;
-    var pattern20 = /p+/;
+    var pattern20 = /ha+/;
+    var pattern21 = /our+/;
+    var pattern22 = /p+/;
     var txt4 = "What's your name? I am mahdi;";
     alert(pattern15.test(txt4));
     alert(pattern15.exec(txt4));
@@ -240,38 +244,76 @@ function regExpObject() {
     alert(pattern19.exec(txt4));
     alert(pattern20.test(txt4));
     alert(pattern20.exec(txt4));
+    alert(pattern21.test(txt4));
+    alert(pattern21.exec(txt4));
+    alert(pattern22.test(txt4));
+    alert(pattern22.exec(txt4));
     /*
-        1.How does << \(any character)+ >> work?
+        1.How does << (any character(s))+ >> work?
             If there is a pattern (substring) with a character and something in the continuation of that...
-                (Or only one character with nothing in continuation) in a text, we are alerted << true >>;
+                (Or only one character with nothing in continuation of that) in a text, we are alerted << true >>;
         ---
-        In the above examples, there is no pattern for pattern20 in the txt4; 
+        In the above examples, there is no pattern for pattern22 in the txt4; 
     */
 
-    var pattern20 = /10?/;
-    var txt5 = "What's your name? I am mahdi;";
-    alert("AAA" + pattern15.test(txt5));
-    alert(pattern15.exec(txt5));
+    var pattern23 = /120?/;
+    var word4 = "12000";
+    var word5 = "1200";
+    var word6 = "120";
+    var word7 = "12";
+    var word8 = "1";
+    alert(pattern23.test(word4));
+    alert(pattern23.exec(word4));
+    alert(pattern23.test(word5));
+    alert(pattern23.exec(word5));
+    alert(pattern23.test(word6));
+    alert(pattern23.exec(word6));
+    alert(pattern23.test(word7));
+    alert(pattern23.exec(word7));
+    alert(pattern23.test(word8));
+    alert(pattern23.exec(word8));
     /*
-        1.How does << \(a character)+ >> work?
-            If there is a substring with a character and something in the continuation of that,
-                We are alerted << true >>;
+        2.How does << (any character(s))? >> work?
+            Is there any pattern (substring) of our pattern in a text or word?
+                If yes, we are alerted << true >>;
+        ---
+        In the above examples, there is no pattern for pattern23 in the word8; 
+    */
+
+    var pattern24 = /\d{8}/;
+    var pattern25 = /\d{4, 8}/;
+    var pattern26 = /\d{7,}/;
+    var txt5 = "This is a nine-digits number: 120000000";
+    var txt6 = "This is a seven-digits number: 1200000";
+    var txt7 = "This is a five-digits numbe: 12000";
+    alert("||| Pattern 24 |||");
+    alert(pattern24.test(txt5));
+    alert(pattern24.exec(txt5));
+    alert(pattern24.test(txt6));
+    alert(pattern24.exec(txt6));
+    alert(pattern24.test(txt7));
+    alert(pattern24.exec(txt7));
+    alert("||| Pattern 25 |||");
+    alert(pattern24.test(txt5));
+    alert(pattern24.exec(txt5));
+    alert(pattern24.test(txt6));
+    alert(pattern24.exec(txt6));
+    alert(pattern24.test(txt7));
+    alert(pattern24.exec(txt7));
+    alert("||| Pattern 26 |||");
+    alert(pattern24.test(txt5));
+    alert(pattern24.exec(txt5));
+    alert(pattern24.test(txt6));
+    alert(pattern24.exec(txt6));
+    alert(pattern24.test(txt7));
+    alert(pattern24.exec(txt7));
+    /*
+        3.What does << \d{number of digits (n)} >> do?
+            It used to find the << n-digit(s) >> numbers;
+            If there is one (or more) << n-digit(s) >> number(s) in our text, we are alerted << true >>;
+        ---
+        4.What does << \d{start(n), end(m)} >> do?
+            It used to find the << n-digit(s) >> to << m-digit(s) >> numbers;
+            Minimum --> << n-digit(s) >> /// Maximum --> << m-digit(s) >> numbers;
     */
 }
-
-var pattern15 = /W+/;
-var pattern16 = /'+/;
-var pattern17 = /I+/;
-var pattern18 = /d+/;
-var pattern19 = /;+/;
-var txt3 = "What's your name? I am mahdi;";
-alert("AAA" + pattern15.test(txt3));
-alert(pattern15.exec(txt3));
-alert(pattern16.test(txt3));
-alert(pattern16.exec(txt3));
-alert(pattern17.test(txt3));
-alert(pattern17.exec(txt3));
-alert(pattern18.test(txt3));
-alert(pattern18.exec(txt3));
-alert(pattern19.test(txt3));
-alert(pattern19.exec(txt3));
