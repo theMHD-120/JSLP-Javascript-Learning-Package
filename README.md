@@ -2,7 +2,7 @@
 
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
 # JSLP-javascript-learning-package
-![JSLP-javascript learning package /// by theMHD](JSLPLogo.png)
+![JSLP-javascript learning package /// by theMHD](JSLPlogo.gif)
 
     Learning javascript with javascript codes :)
     This package contains two chpters, six sections and fifteen parts.
