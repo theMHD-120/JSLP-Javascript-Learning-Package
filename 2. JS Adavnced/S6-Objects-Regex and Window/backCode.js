@@ -382,9 +382,14 @@ function windowObject() {
 
     /*
         Definition:
-            The parent of all objects, classes, variables and everything else in JavaScript;   
+            The parent of all objects, classes, functions, variables and everything else in JavaScript;   
             For example:
-                When we use << document.getElementById("something") >>, 
+                1.When we use << document.getElementById("something") >>, 
                     Originally we use << windows.document.getElementById("something") >>
+                2.When we define a global variable << var x = ... >>, actually
+                    We use << var window.x = ...>>;
+                3.When we define or create a function << function funcName() {} >>,
+                    In fact, we use << function window.funcName() {} >>;
+                and etc...
     */
 }
