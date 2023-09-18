@@ -1,8 +1,8 @@
 ﻿In the name of ALLAH
 
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
-# JLP-javascript-learning-package
-![JLP-javascript learning package /// by theMHD](JLPlogo.png)
+# JSLP-javascript-learning-package
+![JSLP-javascript learning package /// by theMHD](JLPlogo.png)
 
     Learning javascript with javascript codes :)
     This package contains two parts and serveral sections.
@@ -21,4 +21,4 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
             - CSS
             - Basics of a programming language
 
-||| JLP - by theMHD |||
+||| JSLP - by theMHD |||
