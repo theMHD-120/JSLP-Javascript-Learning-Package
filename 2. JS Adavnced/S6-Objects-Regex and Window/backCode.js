@@ -379,5 +379,12 @@ function regExpObject() {
 // JavaScript Objects - Window (BOM - Browser Object Model);
 
 function windowObject() {
-    
+
+    /*
+        Definition:
+            The parent of all objects, classes, variables and everything else in JavaScript;   
+            For example:
+                When we use << document.getElementById("something") >>, 
+                    Originally we use << windows.document.getElementById("something") >>
+    */
 }
