@@ -13,10 +13,12 @@ This package contains two parts and serveral sections.
 
             - HTML
 
-            - CSS (not too necessary)
-
             - Fundamental of computer and programming
+
+        Better to be familiar with:
+
+            - CSS
             
-            - It is better to be a little Familiar with a programming language
+            - Basics of a programming language
 
 ||| JLP - by theMHD |||
