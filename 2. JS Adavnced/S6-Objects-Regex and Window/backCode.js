@@ -392,4 +392,16 @@ function windowObject() {
                     In fact, we use << function window.funcName() {} >>;
                 and etc...
     */
+
+
+    // Window object methods -----------------------------------------------------------------------
+    alert("Window - Methods");
+
+    alert(window.innerWidth);
+    alert(window.innerHeight);
+    /*
+        To get the width and height of our web page;
+        Try the above methods in different sizes of your web page and see the results;
+    */
+
 }
