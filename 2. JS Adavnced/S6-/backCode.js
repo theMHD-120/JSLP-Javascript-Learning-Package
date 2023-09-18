@@ -376,4 +376,4 @@ function regExpObject() {
 
 
 // Part 15 ------------------------------------------------------------------------------------------------------------
-// JavaScript Objects - Window;
+// JavaScript Objects - Window (BOM - Browser Object Model);
