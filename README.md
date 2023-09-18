@@ -12,11 +12,9 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 
 
     Prerequisites:
-
         Familiarity with:
             - HTML
             - Fundamental of computer and programming
-
         Better to be familiar with:
             - CSS
             - Basics of a programming language
