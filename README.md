@@ -12,5 +12,6 @@ Prerequisites:
         - HTML
         - CSS (not too necessary)
         - Fundamental of computer and programming
+        - It is better to be a little Familiar with a programming language
 
 ||| JLP - by theMHD |||
