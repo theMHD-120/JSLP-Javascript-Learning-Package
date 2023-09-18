@@ -401,7 +401,14 @@ function windowObject() {
     alert(window.innerHeight);
     /*
         To get the width and height of our web page;
-        Try the above methods in different sizes of your web page and see the results;
+        Try the above methods in different sizes of your webpage and see the results;
+        ---
+        Note:
+            Some browsers, don't support the << window.innerWidth(Height) >> command;
+            Such as IE (internet explorer) 5, 6 ,7 and 8;
+            So, we have another commands to get the width or height of our webpage:
+                1.document.documentElement.clientWidth(Height);  --> get size by the <html>..</html> tag;
+                2.document.body.clientWidth(Height);  --> get size by the <body>..</body> tag;
     */
 
 }
