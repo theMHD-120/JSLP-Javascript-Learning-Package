@@ -9,4 +9,4 @@ This package contains two parts and serveral sections.
 
 Prerequisites:
 
-||| JLP - JS with JS /// by theMHD |||
+||| JLP - by theMHD |||
