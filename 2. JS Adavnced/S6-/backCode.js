@@ -372,3 +372,8 @@ function regExpObject() {
             So it used to check the start of a text or a word with a pattern;
     */
 }
+
+
+
+// Part 15 ------------------------------------------------------------------------------------------------------------
+// JavaScript Objects - Window;
