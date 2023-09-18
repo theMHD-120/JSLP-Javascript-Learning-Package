@@ -24,4 +24,4 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 
 ![JSLP - javascript learning package - gif file /// by theMHD](JSLPlogo.gif)
 
-||| JSLP - javascript learning package - by theMHD |||
+||| JSLP - by theMHD |||
