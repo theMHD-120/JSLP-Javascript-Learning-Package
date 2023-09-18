@@ -409,6 +409,10 @@ function windowObject() {
             So, we have another commands to get the width or height of our webpage:
                 1.document.documentElement.clientWidth(Height);  --> get size by the <html>..</html> tag;
                 2.document.body.clientWidth(Height);  --> get size by the <body>..</body> tag;
+            ---
+            We can use this assignment to get the size (width or height) of our webpage:
+                var size = window.innerWidth(Height) || document.body.clientWidth(Height) || document.documentElement.clientWidth(Height);
+                What's << || >> sign? --> << or >> sign;
     */
 
 }
