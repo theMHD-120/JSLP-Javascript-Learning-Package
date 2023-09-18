@@ -5,6 +5,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 ![JLP-javascript learning package /// by theMHD](JLPlogo.png)
 
 Learning javascript with javascript codes :)
+
 This package contains two parts and serveral sections.
 
     Prerequisites:
@@ -18,7 +19,7 @@ This package contains two parts and serveral sections.
         Better to be familiar with:
 
             - CSS
-            
+
             - Basics of a programming language
 
 ||| JLP - by theMHD |||
