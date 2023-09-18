@@ -7,15 +7,16 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 Learning javascript with javascript codes :)
 This package contains two parts and serveral sections.
 
-Prerequisites:
-    Familiarity with:
+    Prerequisites:
 
-        - HTML
+        Familiarity with:
 
-        - CSS (not too necessary)
+            - HTML
 
-        - Fundamental of computer and programming
+            - CSS (not too necessary)
 
-        - It is better to be a little Familiar with a programming language
+            - Fundamental of computer and programming
+            
+            - It is better to be a little Familiar with a programming language
 
 ||| JLP - by theMHD |||
