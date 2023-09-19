@@ -400,7 +400,8 @@ function windowObject() {
             1.innerWidh and innerHeight (these are attributes);
             2.open(...);
             3.close();
-            3.moveTo(...);
+            4.moveTo(...);
+            5.resizeTo(...);
     */
     alert("Window - Methods");
     alert("Attention:" +
@@ -455,12 +456,15 @@ function windowObjectMoveMethod() {
         This method moves the opened window to a new coordinates (by pixel);
         Attention: this method may not work on the opened window (after the loading is complete);
         ---
-        How doesx << focus() >> method do?
+        How does << focus() >> method do?
             It focused on the opened window;
     */
 }
 function windowObjectResizeMethod() {
 
-    winPage.resizeTo(1000, 200);
+    winPage.resizeTo(1000, 300);
     winPage.focus();
+    /*
+        This method resizes the opened window to a new size (by pixels);
+    */
 }
