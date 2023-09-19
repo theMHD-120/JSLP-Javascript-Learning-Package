@@ -319,5 +319,5 @@ function dateObject() {
     alert(currDate.toLocaleDateString());
     alert(currDate.toLocaleTimeString());
     alert(currDate.toString());
-    //  Try them and see the results :);
+    //  Try the above methods and see their results :);
 }
