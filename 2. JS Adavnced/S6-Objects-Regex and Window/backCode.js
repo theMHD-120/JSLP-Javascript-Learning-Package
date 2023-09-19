@@ -485,9 +485,10 @@ function windowInnerObjects() {
         ---
 
         List of inner window objects:
-            1.document - window.document;
-            2.screen   - window.screen;
-            3.history  - window.history;
+            1.document  --> window.document;
+            2.screen    --> window.screen;
+            3.history   --> window.history;
+            4.navigator --> window.navigator;
     */
 
     alert(screen.availWidth);
@@ -522,4 +523,6 @@ function windowInnerObjects() {
         window.history.forward();
         window.history.back();
     */
+
+    alert(navigator.appName);  // expired;
 }
