@@ -430,7 +430,6 @@ var winPage = null;
 function windowObjectOpenMethod() {
 
     winPage = window.open("https://github.com/theMHD-120", "", "_blank");
-    winPage.focus();
     /*
         Try and see the result;
         >> A [Window object] with open(...) method;
@@ -448,11 +447,20 @@ function windowObjectCloseMethod() {
         This method has no parameter;
     */
 }
-function windowObjectMoveToMethod() {
+function windowObjectMoveMethod() {
 
     winPage.moveTo(1000, 800);
+    winPage.focus();
     /*
         This method moves the opened window to a new coordinates (by pixel);
-        Attention: this method may not work on the opened window;
+        Attention: this method may not work on the opened window (after the loading is complete);
+        ---
+        How doesx << focus() >> method do?
+            It focused on the opened window;
     */
+}
+function windowObjectResizeMethod() {
+
+    winPage.resizeTo(1000, 200);
+    winPage.focus();
 }
