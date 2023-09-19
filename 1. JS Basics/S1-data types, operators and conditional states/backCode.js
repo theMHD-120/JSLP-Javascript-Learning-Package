@@ -79,7 +79,7 @@ var t = k > 30? "Yes" : "No";   // t = "No";
 // Conditional operators;
 
 var x = prompt("Enter a number (as x): ");  
-// prompt gets a string as input! so x is a string but we can use it as a number!!! WTF:|
+//  prompt gets a string as input! so x is a string but we can use it as a number!!! WTF:|
 
 // If conditions ...
 if (!(x % 2)) {

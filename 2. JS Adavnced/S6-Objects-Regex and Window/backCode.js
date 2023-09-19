@@ -397,21 +397,25 @@ function windowObject() {
     // Window object methods -----------------------------------------------------------------------
     /*
         List of window object methods:
-            1.innerWidh and innerHeight (these are properties);
-            2.open(...);
-            3.close();
-            4.moveTo(...);
-            5.resizeTo(...);
+            In this function:
+                1.innerWidh and innerHeight (these are properties);
+                2.setInterval(...);
+
+            In the next functions:
+                2.open(...);
+                3.close();
+                4.moveTo(...);
+                5.resizeTo(...);
     */
     alert("Window - Methods");
     alert("Attention:" +
-        "\njust the result of .innerWidth and .innerHeight properties are shown here;" + 
-        "\nTo see the other methods, click on the next buttons;");
+        "\nSome methods have their own functions;" + 
+        "\nTo see the result of them, click on the next buttons;");
 
     alert(window.innerWidth);
     alert(window.innerHeight);
     /*
-        To get the width and height of our web page;
+        To get the width and height of our (the client) web page;
         Try the above methods in different sizes of your webpage and see the results;
         ---
         Note:
@@ -424,6 +428,14 @@ function windowObject() {
             We can use this assignment to get the size (width or height) of our web page:
                 var size = window.innerWidth(Height) || document.body.clientWidth(Height) || document.documentElement.clientWidth(Height);
                 What's << || >> sign? --> << or >> sign;
+    */
+
+    setInterval(function() {alert("3 seconds later;")}, 3000);
+    /*
+        What does this method do?
+            This method, actives a function after some milliseconds (in an infinite loop);
+            Syntax: 
+                setInterval(<< an unnamed function >>, the time between activations (millisecond));
     */
 }
 
@@ -483,23 +495,35 @@ function windowInnerObjects() {
         Other inner objects of window object;
         till now, we were working with the << document >> object and its methods and properties;
         ---
-
         List of inner window objects:
             1.document  --> window.document;
             2.screen    --> window.screen;
-            3.history   --> window.history;
-            4.navigator --> window.navigator;
+            3.navigator --> window.navigator;
+            4.history   --> window.history;
     */
 
     alert(screen.availWidth);
     alert(screen.availHeight);
     /*
-        Above properties, get the availeble resolation of our system;
+        Above properties, get the availeble resolation of our (the client) system;
         Resolation of our system not our web page or new window;
         Try above properties in different sizes of your web page and see the results;
         ---
         window.screen.availWidth;
         window.screen.availHeight;
+    */
+
+    alert(navigator.appName);  // an expired property;
+    /*
+        Defination:
+            The navigator object contains information about the visitor's browser;
+            Some properties of navigator object has expired;
+        ---
+        See the following links to learn about navigators:
+            https://www.w3schools.com/js/js_window_navigator.asp
+            https://www.geeksforgeeks.org/html-dom-window-navigator-property/
+        ---
+        window.navigator.appNmae;
     */
 
     alert(history.length);
@@ -522,18 +546,5 @@ function windowInnerObjects() {
         window.history.length;
         window.history.forward();
         window.history.back();
-    */
-
-    alert(navigator.appName);  // an expired property;
-    /*
-        Defination:
-            The navigator object contains information about the visitor's browser;
-            Some properties of navigator object has expired;
-        ---
-        See the following links to learn about navigators:
-            https://www.w3schools.com/js/js_window_navigator.asp
-            https://www.geeksforgeeks.org/html-dom-window-navigator-property/
-        ---
-        window.navigator.appNmae;
     */
 }
