@@ -400,8 +400,12 @@ function windowObject() {
             1.innerWidh and innerHeight (these are attributes);
             2.open(...);
             3.close();
+            3.moveTo(...);
     */
     alert("Window - Methods");
+    alert("Attention:" +
+        "\njust the result of .innerWidth and .innerHeight attributes are shown here;" + 
+        "\nTo see the other methods, click on the next buttons;");
 
     alert(window.innerWidth);
     alert(window.innerHeight);
@@ -425,7 +429,8 @@ function windowObject() {
 var winPage = null;
 function windowObjectOpenMethod() {
 
-    winPage = window.open("https://github.com/theMHD-120", "", "_blank")
+    winPage = window.open("https://github.com/theMHD-120", "", "_blank");
+    winPage.focus();
     /*
         Try and see the result;
         >> A [Window object] with open(...) method;
@@ -441,5 +446,13 @@ function windowObjectCloseMethod() {
     /*
         This method closes the opened window;
         This method has no parameter;
+    */
+}
+function windowObjectMoveToMethod() {
+
+    winPage.moveTo(1000, 800);
+    /*
+        This method moves the opened window to a new coordinates (by pixel);
+        Attention: this method may not work on the opened window;
     */
 }
