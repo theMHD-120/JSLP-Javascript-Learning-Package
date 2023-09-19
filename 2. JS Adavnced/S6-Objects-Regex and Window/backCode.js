@@ -399,6 +399,7 @@ function windowObject() {
         List of window object methods:
             1.innerWidh and innerHeight (these are attributes);
             2.open(...);
+            3.close();
     */
     alert("Window - Methods");
 
@@ -411,22 +412,34 @@ function windowObject() {
         Note:
             Some browsers, don't support the << window.innerWidth(Height) >> command;
             Such as IE (internet explorer) 5, 6 ,7 and 8;
-            So, we have another commands to get the width or height of our webpage:
+            So, we have another commands to get the width or height of our web page:
                 1.document.documentElement.clientWidth(Height);  --> get size by the <html>..</html> tag;
                 2.document.body.clientWidth(Height);  --> get size by the <body>..</body> tag;
             ---
-            We can use this assignment to get the size (width or height) of our webpage:
+            We can use this assignment to get the size (width or height) of our web page:
                 var size = window.innerWidth(Height) || document.body.clientWidth(Height) || document.documentElement.clientWidth(Height);
                 What's << || >> sign? --> << or >> sign;
     */
-   
-    alert(window.open("https://github.com/theMHD-120", "", "_blank"));
+}
+
+var winPage = null;
+function windowObjectOpenMethod() {
+
+    winPage = window.open("https://github.com/theMHD-120", "", "_blank")
     /*
         Try and see the result;
-        >> A Window object with open(...) method;
-        >> open("An address", "features of openning window", target);
+        >> A [Window object] with open(...) method;
+        >> open("An address", "features of pop-up window", target);
         ---
-        Try this in your browser and see the result (with no feature and target):
+        Try this in your browser and see the result (open() mehod with no feature and target):
             window.open("https://github.com/theMHD-120");
+    */
+}
+function windowObjectCloseMethod() {
+
+    winPage.close();
+    /*
+        This method closes the opened window;
+        This method has no parameter;
     */
 }
