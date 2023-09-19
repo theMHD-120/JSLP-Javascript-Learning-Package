@@ -524,5 +524,13 @@ function windowInnerObjects() {
         window.history.back();
     */
 
-    alert(navigator.appName);  // expired;
+    alert(navigator.appName);  // an expired property;
+    /*
+        See the following link to learn about navigators:
+            https://www.w3schools.com/js/js_window_navigator.asp
+        ---
+        window.navigator.appNmae;
+    */
+
+    
 }
