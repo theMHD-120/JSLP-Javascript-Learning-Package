@@ -430,7 +430,7 @@ function windowObject() {
                 What's << || >> sign? --> << or >> sign;
     */
 
-    setInterval(function() {alert("3 seconds later;")}, 3000);
+    setInterval(function() {alert("2 seconds later;")}, 2000);
     /*
         What does this method do?
             This method, actives a function after some milliseconds (in an infinite loop);
