@@ -276,12 +276,12 @@ function regExpObject() {
         In the above examples, there is no pattern for pattern22 in the txt4; 
     */
 
-    var pattern23 = /120?/;
-    var word4 = "12000";
-    var word5 = "1200";
-    var word6 = "120";
-    var word7 = "12";
-    var word8 = "1";
+    var pattern23 = /1234?/;
+    var word4 = "123400";
+    var word5 = "12340";
+    var word6 = "1234";
+    var word7 = "123";
+    var word8 = "12";
     alert("||| Pattern 23 |||");
     alert(pattern23.test(word4));
     alert(pattern23.exec(word4));
@@ -395,6 +395,11 @@ function windowObject() {
 
 
     // Window object methods -----------------------------------------------------------------------
+    /*
+        List of window object methods:
+            1.innerWidh and innerHeight (these are attributes);
+            2.open("An address");
+    */
     alert("Window - Methods");
 
     alert(window.innerWidth);
