@@ -483,10 +483,11 @@ function windowInnerObjects() {
         Other inner objects of window object;
         till now, we were working with the << document >> object and its methods and properties;
         ---
+
         List of inner window objects:
-            1.document (won't be check);
-            2.screen;
-            3.
+            1.document - window.document;
+            2.screen   - window.screen;
+            3.history  - window.history;
     */
 
     alert(screen.availWidth);
@@ -495,7 +496,30 @@ function windowInnerObjects() {
         Above properties, get the availeble resolation of our system;
         Resolation of our system not our web page or new window;
         Try above properties in different sizes of your web page and see the results;
+        ---
+        window.screen.availWidth;
+        window.screen.availHeight;
     */
 
-    
+    alert(history.length);
+    alert(history.forward());
+    alert(history.back());
+    /*
+        Property and mehods:
+            1.length:
+                It gives us the length of our search history;
+            2.forward():
+                Works like forward button at the top of browser;
+            3.back():
+                Works like back button at the top of browser;
+            ---
+            (<-|->):
+                <- back;
+                -> forward;
+            Ok? XD;
+        ---
+        window.history.length;
+        window.history.forward();
+        window.history.back();
+    */
 }
