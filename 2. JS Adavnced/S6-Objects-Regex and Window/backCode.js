@@ -526,11 +526,14 @@ function windowInnerObjects() {
 
     alert(navigator.appName);  // an expired property;
     /*
-        See the following link to learn about navigators:
+        Defination:
+            The navigator object contains information about the visitor's browser;
+            Some properties of navigator object has expired;
+        ---
+        See the following links to learn about navigators:
             https://www.w3schools.com/js/js_window_navigator.asp
+            https://www.geeksforgeeks.org/html-dom-window-navigator-property/
         ---
         window.navigator.appNmae;
     */
-
-    
 }
