@@ -430,13 +430,16 @@ function windowObject() {
                 What's << || >> sign? --> << or >> sign;
     */
 
-    setInterval(function() {alert("2 seconds later;")}, 2000);
+    var actInterval = setInterval(function() {alert("2 seconds later;")}, 2000);
     /*
         What does this method do?
             This method, actives a function after some milliseconds (in an infinite loop);
             Syntax: 
                 setInterval(<< an unnamed function >>, the time between activations (millisecond));
+            ---
+            To stop the setInterval activity, use << clearInterval(...) >> method;
     */
+    // clearInterval(actInterval);
 }
 
 var winPage = null;
