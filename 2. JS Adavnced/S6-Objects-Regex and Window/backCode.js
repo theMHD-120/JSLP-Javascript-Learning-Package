@@ -470,3 +470,16 @@ function windowObjectResizeMethod() {
         >> resizeTo(newHeight, newWidth);
     */
 }
+
+function windowInnerObjects() {
+
+    /*
+        Other inner objects of window object;
+        till now, we were working with the << document >> object and its methods and attributes;
+        ---
+        List of inner window objects:
+            1.document;
+            2.screen;
+            3.
+    */
+}
