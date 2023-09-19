@@ -397,7 +397,7 @@ function windowObject() {
     // Window object methods -----------------------------------------------------------------------
     /*
         List of window object methods:
-            1.innerWidh and innerHeight (these are attributes);
+            1.innerWidh and innerHeight (these are properties);
             2.open(...);
             3.close();
             4.moveTo(...);
@@ -405,7 +405,7 @@ function windowObject() {
     */
     alert("Window - Methods");
     alert("Attention:" +
-        "\njust the result of .innerWidth and .innerHeight attributes are shown here;" + 
+        "\njust the result of .innerWidth and .innerHeight properties are shown here;" + 
         "\nTo see the other methods, click on the next buttons;");
 
     alert(window.innerWidth);
@@ -438,6 +438,11 @@ function windowObjectOpenMethod() {
         ---
         Try this in your browser and see the result (open() mehod with no feature and target):
             window.open("https://github.com/theMHD-120");
+        ---
+        To see the working of moveTo(...) and resizeTo(...) methods,
+            You can use an empty address for your new window;
+        How? Just use this:
+            winPage = window.open("", "", "_blank")
     */
 }
 function windowObjectCloseMethod() {
@@ -467,6 +472,7 @@ function windowObjectResizeMethod() {
     winPage.focus();
     /*
         This method resizes the opened window to a new size (Pixel based);
+        Attention: this method may not work on the opened window (after the loading is completed);
         >> resizeTo(newHeight, newWidth);
     */
 }
@@ -475,11 +481,21 @@ function windowInnerObjects() {
 
     /*
         Other inner objects of window object;
-        till now, we were working with the << document >> object and its methods and attributes;
+        till now, we were working with the << document >> object and its methods and properties;
         ---
         List of inner window objects:
-            1.document;
+            1.document (won't be check);
             2.screen;
             3.
     */
+
+    alert(screen.availWidth);
+    alert(screen.availHeight);
+    /*
+        Above properties, get the availeble resolation of our system;
+        Resolation of our system not our web page or new window;
+        Try above properties in different sizes of your web page and see the results;
+    */
+
+    
 }
