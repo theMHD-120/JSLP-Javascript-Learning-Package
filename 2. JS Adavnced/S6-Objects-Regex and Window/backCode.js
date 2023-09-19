@@ -398,7 +398,7 @@ function windowObject() {
     /*
         List of window object methods:
             1.innerWidh and innerHeight (these are attributes);
-            2.open("An address");
+            2.open(...);
     */
     alert("Window - Methods");
 
@@ -419,5 +419,14 @@ function windowObject() {
                 var size = window.innerWidth(Height) || document.body.clientWidth(Height) || document.documentElement.clientWidth(Height);
                 What's << || >> sign? --> << or >> sign;
     */
-
+   
+    alert(window.open("https://github.com/theMHD-120", "", "_blank"));
+    /*
+        Try and see the result;
+        >> A Window object with open(...) method;
+        >> open("An address", "features of openning window", target);
+        ---
+        Try this in your browser and see the result (with no feature and target):
+            window.open("https://github.com/theMHD-120");
+    */
 }
