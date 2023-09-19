@@ -453,8 +453,9 @@ function windowObjectMoveMethod() {
     winPage.moveTo(1000, 800);
     winPage.focus();
     /*
-        This method moves the opened window to a new coordinates (by pixel);
-        Attention: this method may not work on the opened window (after the loading is complete);
+        This method moves the opened window to a new coordinates (Pixel based);
+        Attention: this method may not work on the opened window (after the loading is completed);
+        >> moveTo(axis x, axis y);
         ---
         How does << focus() >> method do?
             It focused on the opened window;
@@ -465,6 +466,7 @@ function windowObjectResizeMethod() {
     winPage.resizeTo(1000, 300);
     winPage.focus();
     /*
-        This method resizes the opened window to a new size (by pixels);
+        This method resizes the opened window to a new size (Pixel based);
+        >> resizeTo(newHeight, newWidth);
     */
 }
