@@ -298,6 +298,7 @@ function dateObject() {
     alert("September 21, 2000:\n" + Date.parse("September 21, 2000"));
     alert("december 3 2005:\n" + Date.parse("december 3 2005"));
     /*
+        A powerful method in the Date class;
         To get the timestamp of a desired date (input can be of any type); 
         Best type for input --> day month (with letters), year (first example);
     */
@@ -315,6 +316,8 @@ function dateObject() {
 
     var currDate = new Date();
     alert(currDate.toDateString());
+    alert(currDate.toLocaleDateString());
+    alert(currDate.toLocaleTimeString());
     alert(currDate.toString());
     //  Try them and see the results :);
 }
