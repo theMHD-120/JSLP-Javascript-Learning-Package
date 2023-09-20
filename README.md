@@ -17,7 +17,6 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
             Section 5: JS Objects - Array and Math;
             Section 6: JS Objects - Regular expressions (regex) and Window;
 
-
     Prerequisites:
         Familiarity with:
             - HTML
@@ -25,7 +24,6 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
         Better to be familiar with:
             - CSS
             - Basics of a programming language
-
 
 ![JSLP - javascript learning package - gif file /// by theMHD](Images/JSLPlogo.gif)
 
