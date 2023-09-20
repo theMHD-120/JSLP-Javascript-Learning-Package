@@ -4,7 +4,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 # JSLP-javascript-learning-package
 ![JSLP - javascript learning package - png file /// by theMHD](Images/JSLPlogo.png)
 
-    Learning javascript with javascript codes :)
+    Learning javascript with the javascript codes :)
     This package contains two chpters, six sections and fifteen parts.
 
     Contents:
