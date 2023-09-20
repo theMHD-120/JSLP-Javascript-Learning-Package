@@ -27,6 +27,6 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
             - CSS
             - Basics of a programming language
 
-![JSLP - javascript learning package - png file /// by theMHD](Logo\JSLPlogo.gif)
+![JSLP - javascript learning package - gif file /// by theMHD](Logo\JSLPlogo.gif)
 
 ||| JSLP - by theMHD |||
