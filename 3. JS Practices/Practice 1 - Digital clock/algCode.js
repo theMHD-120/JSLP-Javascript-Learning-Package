@@ -34,6 +34,7 @@ function digiClock() {
 
 function toggleTimer() {
     if (document.getElementById("toggle").value == "Pause") {
+        document.getElementById("space").style = "box-shadow: none";
         document.getElementById("clock").style = "color: rgb(138, 0, 60, 0.6);"
         document.getElementById("toggle").style = "box-shadow: inset rgba(0, 0, 0, 0.6) 0px 10px 50px;";
         document.getElementById("toggle").value = "Play";
@@ -41,6 +42,7 @@ function toggleTimer() {
     }
     else {
         document.getElementById("clock").style = "color: rgb(161, 0, 70);";
+        document.getElementById("space").style = "box-shadow: rgba(0, 0, 0, 0.6) 0px 30px 50px";
         document.getElementById("toggle").style = "box-shadow: inset rgba(0, 0, 0, 0.6) 0px 1px 5px;";
         document.getElementById("toggle").value = "Pause";
         timeFlag = true;
