@@ -35,21 +35,19 @@ input {
   height: 45px;
   cursor: pointer;
   margin-top: 5px;
-  font-size: larger;
+  font-size: 27px;
   transition: 200ms;
   border-radius: 5px;
   font-weight: bolder;
   color: rgb(161, 0, 70);
   background-color: rgba(1, 1, 109, 0.3);
   border: solid 1px rgb(138, 0, 60, 0.6);
-  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 1px 5px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0px 1px 5px;
 }
 input:hover {
-  border: none;
-  border: solid 1px rgb(138, 0, 60, 0.6);
-  text-shadow: rgba(0, 0, 0, 0.592) 0px 1px 3px;
-  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 3px 10px;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 3px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0px 3px 10px;
 }
 input:active {
-  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 10px 20px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0px 10px 50px;
 }
