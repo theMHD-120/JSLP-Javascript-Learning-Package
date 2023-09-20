@@ -2,7 +2,7 @@
 
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
 # JSLP-javascript-learning-package
-![JSLP - javascript learning package - png file /// by theMHD](Logo-Icon\JSLPlogo.png)
+![JSLP - javascript learning package - png file /// by theMHD](Logo\JSLPlogo.png)
 
     Learning javascript with the javascript codes :)
     This package contains three chpters, six sections and fifteen parts.
@@ -27,6 +27,6 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
             - CSS
             - Basics of a programming language
 
-![JSLP - javascript learning package - gif file /// by theMHD](Logo-Icon\JSLPlogo.gif)
+![JSLP - javascript learning package - gif file /// by theMHD](Logo\JSLPlogo.gif)
 
 ||| JSLP - by theMHD |||
