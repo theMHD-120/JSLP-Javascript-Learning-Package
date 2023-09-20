@@ -4,7 +4,7 @@ body {
   background: linear-gradient(90deg, rgb(186, 1, 192) 0%, rgba(0,212,255,1) 50%, rgb(186, 1, 192) 100%);
 }
 
-#Space {
+#space {
   margin: auto;
   width: 630px;
   height: 630px;
@@ -16,11 +16,11 @@ body {
   background: linear-gradient(rgba(1, 1, 109, 0.4) 0%, rgba(0,212,255, 0.4) 50%, rgba(1, 1, 109, 0.4) 100%);
 }
 
-#Clock {
+#clock {
   margin: auto;
-  width: 510px;
+  width: 500px;
   height: 110px;
-  margin-top: 40%;
+  margin-top: 38%;
   font-size: 78px;
   text-align: center;
   border-radius: 15px;
@@ -31,21 +31,25 @@ body {
 }
 
 input {
-  width: 500px;
-  height: 40px;
+  width: 490px;
+  height: 45px;
   cursor: pointer;
-  font-size: large;
+  margin-top: 5px;
+  font-size: larger;
   transition: 200ms;
   border-radius: 5px;
-  margin-bottom: 5px;
-  border: solid 1px darkviolet;
-  background-color:rgba(255, 255, 255, 0.7);
+  font-weight: bolder;
+  color: rgb(161, 0, 70);
+  background-color: rgba(1, 1, 109, 0.3);
+  border: solid 1px rgb(138, 0, 60, 0.6);
+  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 1px 5px;
 }
 input:hover {
   border: none;
-  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 3px 4px;
+  border: solid 1px rgb(138, 0, 60, 0.6);
   text-shadow: rgba(0, 0, 0, 0.592) 0px 1px 3px;
+  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 3px 10px;
 }
 input:active {
-  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 10px 10px;
+  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 10px 20px;
 }

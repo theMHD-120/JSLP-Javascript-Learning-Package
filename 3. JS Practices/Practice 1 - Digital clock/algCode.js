@@ -8,19 +8,41 @@
     Used objects: 
         - Date 
         - setInterval (one of inner window objects)
+        - clearInterval (one of inner window objects)
 
     In JSLP:
         Date: JS Advance / Section 4 - String and Date / Part 11;
-        setInterval: JS Advance / Section 6 - Regex and Window / Part 15;
+        setInterval and clearInterval: 
+            JS Advance / Section 6 - Regex and Window / Part 15;
 */
 
 var currTime = null;
-function digiClock() {
-    currTime = setInterval(function() {Timer();}, 1000);
-}
+var timeFlag = true;
 
 function Timer() {
     var currDate = new Date();
     var time = currDate.toLocaleTimeString();
-    document.getElementById("Clock").innerHTML = time;
+    document.getElementById("clock").innerHTML = time;
+}
+
+function digiClock() {
+    if (timeFlag == true)
+        currTime = setInterval(function() {Timer();}, 1000);
+    else
+        clearInterval(currTime);
+}
+
+function toggleTimer() {
+    if (document.getElementById("toggle").value == "Pause") {
+        document.getElementById("toggle").value = "Play";
+        document.getElementById("clock").style = "color: rgb(138, 0, 60, 0.6);"
+        timeFlag = false;
+    }
+    else {
+        document.getElementById("toggle").value = "Pause";
+        document.getElementById("clock").style = "color: rgb(161, 0, 70);";
+        timeFlag = true;
+    }
+
+    digiClock();
 }
