@@ -400,12 +400,15 @@ function windowObject() {
             In this function:
                 1.innerWidh and innerHeight (these are properties);
                 2.setInterval(...);
+                3.clearInterval(...);
+                4.setTimeOut(...);
+                5.clearTimeOut(...);
 
             In the next functions:
-                2.open(...);
-                3.close();
-                4.moveTo(...);
-                5.resizeTo(...);
+                6.open(...);
+                7.close();
+                8.moveTo(...);
+                9.resizeTo(...);
     */
     alert("Window - Methods");
     alert("Attention:" +
@@ -430,16 +433,34 @@ function windowObject() {
                 What's << || >> sign? --> << or >> sign;
     */
 
-    var actInterval = setInterval(function() {alert("2 seconds later;")}, 2000);
+    var infiniteActivity = setInterval(function() {alert("2 seconds later;")}, 2000);
     /*
-        What does this method do?
+        What does the << setInterval(...) >> method do?
             This method, actives a function after some milliseconds (in an infinite loop);
             Syntax: 
                 setInterval(<< an unnamed function >>, the time between activations (millisecond));
             ---
             To stop the setInterval activity, use << clearInterval(...) >> method;
     */
-    // clearInterval(actInterval);
+    // clearInterval(infiniteActivity);
+
+    var finiteActivity = setTimeout(function() {alert("3 seconds later;"); location.reload();}, 3000);
+    /*
+        How does the << setTimeout(...) >> method works?
+            This method, actives a function after some milliseconds (just once);
+            Syntax: 
+                setTimeout(<< an unnamed function >>, the time between activations (millisecond));
+            ---
+            As you can see, everything is the same as the << setInterval(...) >> method;
+            But it only works once (not in an infinite loop);
+            ---
+            To stop the setTimeout activity, use << setTimeout(...) >> method;
+        ---
+        What does << location.reload() >> do?
+            It reloads the current web page of the client;
+            >> Refer to the inner window objects function;
+    */
+    // clearTimeout(finiteActivity);
 }
 
 var winPage = null;
@@ -502,13 +523,14 @@ function windowInnerObjects() {
             1.document  --> window.document;
             2.screen    --> window.screen;
             3.navigator --> window.navigator;
-            4.history   --> window.history;
+            4.location  --> window.location;
+            5.history   --> window.history;
     */
 
     alert(screen.availWidth);
     alert(screen.availHeight);
     /*
-        Above properties, get the availeble resolation of our (the client) system;
+        Above properties, give the availeble resolation of our (the client) system;
         Resolation of our system not our web page or new window;
         Try above properties in different sizes of your web page and see the results;
         ---
@@ -529,8 +551,29 @@ function windowInnerObjects() {
         window.navigator.appNmae;
     */
 
+    alert(location.href);
+    /*
+        Defination:
+            The location object can be used to get the...
+                Current page address (URL) and to redirect the browser to a new page.
+        Above example, gives the << address (URL) >> of client's current web page;
+        ---
+        See the following links to learn about navigators:
+            https://www.w3schools.com/js/js_window_location.asp
+            https://www.geeksforgeeks.org/javascript-window-location-and-document-location-objects/
+        ---
+        An useful method to reload our current web page:
+            location.reload();
+        Also we can use the << document >> object:
+            document.reload();
+        ---
+        window.location.herf;
+    */
+
     alert(history.length);
+    alert("Attention:\n" + "Now, if you have a history and can to be forwarded, you will be forward to your next visited website;");
     alert(history.forward());
+    alert("Attention:\n" + "Now, you will go back;");
     alert(history.back());
     /*
         Property and mehods:
@@ -551,3 +594,7 @@ function windowInnerObjects() {
         window.history.back();
     */
 }
+
+
+
+// The end of JS Advanced part -----------------------------------------------------------------------------------------
