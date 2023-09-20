@@ -3,11 +3,15 @@
     JSLP - javascript learning package
     Author: seyed mahdi mahdavi mortazavi (theMHD)
 
-    ------------------- << Practice 1 >> -------------------
+    --------------------------- << Practice 1 >> ---------------------------
     Designing a digital clock using the JavaScript objects;
     Used objects: 
-        - Date
+        - Date 
         - setInterval (one of inner window objects)
+
+    In JSLP:
+        Date: JS Advance / Section 4 - String and Date / Part 11;
+        setInterval: JS Advance / Section 6 - Regex and Window / Part 15;
 */
 
 var currTime = null;
