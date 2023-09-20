@@ -19,7 +19,7 @@
 var currTime = null;
 var timeFlag = true;
 
-function Timer() {
+function getCurrTime() {
     var currDate = new Date();
     var time = currDate.toLocaleTimeString();
     document.getElementById("clock").innerHTML = time;
@@ -27,7 +27,7 @@ function Timer() {
 
 function digiClock() {
     if (timeFlag == true)
-        currTime = setInterval(function() {Timer();}, 1000);
+        currTime = setInterval(function() {getCurrTime();}, 1000);
     else
         clearInterval(currTime);
 }
