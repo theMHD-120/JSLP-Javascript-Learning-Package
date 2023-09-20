@@ -5,7 +5,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 ![JSLP - javascript learning package - png file /// by theMHD](Images/JSLPlogo.png)
 
     Learning javascript with the javascript codes :)
-    This package contains two chpters, six sections and fifteen parts.
+    This package contains three chpters, six sections and fifteen parts.
 
     Contents:
         Chapter 1: Basics of javascript (like another programming languages);
@@ -16,6 +16,8 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
             Section 4: JS Objects - String and Date;
             Section 5: JS Objects - Array and Math;
             Section 6: JS Objects - Regular expressions (regex) and Window;
+        Chapter 3: Some good practices :);
+            After finishing the chapters 1&2, you can check this practices;
 
     Prerequisites:
         Familiarity with:
