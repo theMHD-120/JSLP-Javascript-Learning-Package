@@ -540,7 +540,7 @@ function windowInnerObjects() {
 
     alert(navigator.appName);  // an expired property;
     /*
-        Defination:
+        Definition:
             The navigator object contains information about the visitor's browser;
             Some properties of navigator object has expired;
         ---
@@ -553,7 +553,7 @@ function windowInnerObjects() {
 
     alert(location.href);
     /*
-        Defination:
+        Definition:
             The location object can be used to get the...
                 Current page address (URL) and to redirect the browser to a new page.
         Above example, gives the << address (URL) >> of client's current web page;
