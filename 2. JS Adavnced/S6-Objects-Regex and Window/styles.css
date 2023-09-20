@@ -4,10 +4,6 @@ body {
   background: linear-gradient(90deg, rgb(8, 8, 181) 0%, rgba(0,212,255,1) 50%, rgb(186, 1, 192) 90%);
 }
 
-input {
-  cursor: pointer;
-}
-
 #part_name {
   margin: auto;
   width: 150px;
@@ -36,6 +32,7 @@ input {
 input {
   width: 500px;
   height: 40px;
+  cursor: pointer;
   font-size: large;
   transition: 200ms;
   border-radius: 5px;

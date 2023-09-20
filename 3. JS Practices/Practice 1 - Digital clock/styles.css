@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, rgb(186, 1, 192) 0%, rgba(0,212,255,1) 50%, rgb(186, 1, 192) 100%);
+}
+
+#Space {
+  margin: auto;
+  width: 630px;
+  height: 630px;
+  margin-top: 8%;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid rgb(138, 0, 60, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 30px 50px;
+  background: linear-gradient(rgba(1, 1, 109, 0.4) 0%, rgba(0,212,255, 0.4) 50%, rgba(1, 1, 109, 0.4) 100%);
+}
+
+#Clock {
+  margin: auto;
+  width: 510px;
+  height: 110px;
+  margin-top: 40%;
+  font-size: 78px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(161, 0, 70);
+  background-color: rgba(1, 1, 109, 0.4);
+  border: 2px solid rgb(138, 0, 60, 0.6);
+  box-shadow: inset rgba(0, 0, 0, 0.45) 0px 10px 20px;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  cursor: pointer;
+  font-size: large;
+  transition: 200ms;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: solid 1px darkviolet;
+  background-color:rgba(255, 255, 255, 0.7);
+}
+input:hover {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.592) 0px 3px 4px;
+  text-shadow: rgba(0, 0, 0, 0.592) 0px 1px 3px;
+}
+input:active {
+  box-shadow: rgba(0, 0, 0, 0.592) 0px 10px 50px;
+}
