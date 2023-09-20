@@ -43,9 +43,9 @@ input {
 }
 input:hover {
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.592) 0px 3px 4px;
+  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 3px 4px;
   text-shadow: rgba(0, 0, 0, 0.592) 0px 1px 3px;
 }
 input:active {
-  box-shadow: rgba(0, 0, 0, 0.592) 0px 10px 50px;
+  box-shadow: inset rgba(0, 0, 0, 0.592) 0px 10px 10px;
 }
