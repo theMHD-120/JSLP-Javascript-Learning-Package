@@ -23,11 +23,13 @@ body {
   height: 110px;
   margin-top: 36%;
   font-size: 78px;
+  transition: 300ms;
   text-align: center;
   border-radius: 15px;
   color: rgb(161, 0, 70);
   background-color: rgba(1, 1, 109, 0.4);
   border: 2px solid rgb(138, 0, 60, 0.6);
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 3px 3px;
   box-shadow: inset rgba(0, 0, 0, 0.45) 0px 10px 20px;
 }
 
@@ -37,7 +39,7 @@ input {
   cursor: pointer;
   margin-top: 5px;
   font-size: 27px;
-  transition: 200ms;
+  transition: 300ms;
   border-radius: 5px;
   font-weight: bolder;
   color: rgb(161, 0, 70);
