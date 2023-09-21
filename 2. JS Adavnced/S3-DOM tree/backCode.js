@@ -18,11 +18,15 @@ function changeValue() {
         paragraph[index].style.borderColor = "darkred";
     }
 
-    // alert(document.getElementById('img1').src) --> it shows bottom address (for dom-tree-js.png);
+    alert(document.getElementById('img1').src) 
     if (document.getElementById('img1').src == "http://127.0.0.1:5500/2.%20JS%20Adavnced/S3-/dom-tree-js.png")
         document.getElementById('img1').src = "dom-tree-js-2.png";
     else
         document.getElementById('img1').src = "dom-tree-js.png";
+    /*
+        alert(document.getElementById('img1').src):
+           It shows the local address of << dom-tree-js.png >> in the client's system;
+    */
     
 }
 
