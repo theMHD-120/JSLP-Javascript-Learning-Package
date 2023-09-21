@@ -1,6 +1,9 @@
 // Part 8 ------------------------------------------------------------------------------------------------------------
 // Document Object Model (DOM) Tree; 
-// What is the logic of DOM? every tags are known as a node (a node in the DOM tree :);
+/*
+    What is the logic of DOM? 
+        Every tags are known as a node (a node in the DOM tree :);
+*/
 
 function changeValue() {
     // document.getElementById("comp1").innerHTML = "somthing on the way";
