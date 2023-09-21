@@ -115,36 +115,38 @@ function addNewLinks(flagNumber) {
         document.getElementById("comp2").appendChild(newLink);
     } else if (flagNumber == 2) {
         var targets = document.getElementById("comp2").getElementsByTagName("a"); 
-        // Note: var targets = document.getElementsByTagName("a") --> it works (so using getElementById("comp2") is not necessary); but ...
-        // Attention: if we want to use <a>..</a> tags that are only in div tag (with id="comp2"), using getElementById("comp2") is necessary;
+        /*
+            Note: var targets = document.getElementsByTagName("a") --> it works (so using getElementById("comp2") is not necessary); but ...
+            Attention: if we want to use <a>..</a> tags that are only in div tag (with id="comp2"), using getElementById("comp2") is necessary;
+        */
 
         document.getElementById("comp2").insertBefore(newLink, targets[0]);  // targets[0] --> first <a>..</a> tag (link 1);
         
         /*
-        A new method:
-        document.getElementById("comp2").replaceChild(newLink, targets[0]);  
-        What is replaceChild method? to replace a child (targets[0] --> link 1) with a new child (newLink --> link 3); 
-        You can try this :);
+            A new method:
+                document.getElementById("comp2").replaceChild(newLink, targets[0]);  
+                What is replaceChild method? to replace a child (targets[0] --> link 1) with a new child (newLink --> link 3); 
+                You can try this :);
         */
     }
 
     /*
-    How can we give an event to the new tag (here --> newLink)?
-    With using << event attributes >>;
-    See the code below; 
-    Click on the inserted link (Link 3) and see the result :);
+        How can we give an event to the new tag (here --> newLink)?
+            With using << event attributes >>;
+            See the code below; 
+            Click on the inserted link (Link 3) and see the result :);
     */
     newLink.onclick = function() {alert("Link 3 (new link) clicked!");}
 }
 
 function removeLinks () {
     /* 
-    Attention #1: in this function we work with div tag (with id="comp2");
-    Attention #2: 
-        In this function we work with <a>..</a> tag and its attributes (as a link);
-        We can also use all the tags with their attributes;
-    Functions or methods:
-        removeChild: to remove a child of an element;
+        Attention #1: in this function we work with div tag (with id="comp2");
+        Attention #2: 
+            In this function we work with <a>..</a> tag and its attributes (as a link);
+            We can also use all the tags with their attributes;
+        Functions or methods:
+            removeChild: to remove a child of an element;
     */
 
     var parentElmnt = document.getElementById("comp2");
