@@ -13,7 +13,6 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
             Section 2: functions, loops, events and try-catch;
         Chapter 2: Special and advanced contents of javascript;
             Section 3: DOM tree (DOM definition and modification);
-                - DOM: Document Object Model
             Section 4: JS Objects - String and Date;
             Section 5: JS Objects - Array and Math;
             Section 6: JS Objects - Regular expressions (regex) and Window;
