@@ -69,5 +69,5 @@ a {
   transition: 300ms;
 }
 #authorName:hover {
-  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 3px;
+  text-shadow: rgba(252, 252, 252, 0.6) 0px 1px 3px;
 }

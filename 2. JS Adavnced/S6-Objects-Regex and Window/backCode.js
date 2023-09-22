@@ -472,7 +472,7 @@ function windowObjectOpenMethod() {
         >> A [Window object] with open(...) method;
         >> open("An address", "features of pop-up window", target);
         ---
-        Try this in your browser and see the result (open() mehod with no feature and target):
+        Try this in your browser and see the result (open() mehod with no custom "feature" and target):
             window.open("https://github.com/theMHD-120");
         ---
         To see the working of moveTo(...) and resizeTo(...) methods,
@@ -486,7 +486,7 @@ function windowObjectCloseMethod() {
     winPage.close();
     /*
         This method closes the opened window;
-        This method has no parameter;
+        This method has no parameters;
     */
 }
 function windowObjectMoveMethod() {
@@ -516,7 +516,7 @@ function windowObjectResizeMethod() {
 function windowInnerObjects() {
 
     /*
-        Other inner objects of window object;
+        Some inner objects of window object;
         till now, we were working with the << document >> object and its methods and properties;
         ---
         List of inner window objects:
@@ -530,8 +530,8 @@ function windowInnerObjects() {
     alert(screen.availWidth);
     alert(screen.availHeight);
     /*
-        Above properties, give the availeble resolation of our (the client) system;
-        Resolation of our system not our web page or new window;
+        Above properties, give the availeble resolation of our (the client's) system;
+        Available resolation of our system not our web page or new window;
         Try above properties in different sizes of your web page and see the results;
         ---
         window.screen.availWidth;
@@ -562,7 +562,7 @@ function windowInnerObjects() {
             https://www.w3schools.com/js/js_window_location.asp
             https://www.geeksforgeeks.org/javascript-window-location-and-document-location-objects/
         ---
-        An useful method to reload our current web page:
+        An useful method to reload our (the client's) current web page:
             location.reload();
         Also we can use the << document >> object:
             document.reload();
