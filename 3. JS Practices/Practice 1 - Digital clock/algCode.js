@@ -36,7 +36,7 @@ function digiClock() {
 
 function toggleStyle(state) {
     if(!state) {
-        document.getElementById("space").style =  "box-shadow: none;"
+        document.getElementById("space").style =  "box-shadow: none; transform: scale(0.97, 0.97);"
         document.getElementById("clock").style = "text-shadow: none; color: rgb(138, 0, 60, 0.6);"
         document.getElementById("toggle").style = "box-shadow: inset rgba(0, 0, 0, 0.4) 0px 10px 50px;";
         document.body.style = "background: linear-gradient(90deg, rgb(156, 1, 161) 0%, rgb(1, 138, 166) 50%, rgb(156, 1, 161) 100%);";
