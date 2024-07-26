@@ -1,4 +1,4 @@
-﻿||| In the name of Allah ||| </ br>
+﻿||| In the name of Allah ||| <\ br>
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
 
 # JSLP-javascript-learning-package
