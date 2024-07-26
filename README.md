@@ -1,5 +1,7 @@
-﻿||| In the name of Allah ||| <\ br>
+﻿||| In the name of Allah ||| 
+---------------------------
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
+>>> 
 
 # JSLP-javascript-learning-package
 ![JSLP - javascript learning package - png file](Logo/JSLPlogo.png)
