@@ -1,6 +1,6 @@
 ﻿||| In the name of Allah ||| <br/>
 Author:  seyed mahdi mahdavi mortazavi (theMHD)
->>> 
+>>> JavaScript Learning Package - Summer 2023
 
 # JSLP-javascript-learning-package
 ![JSLP - javascript learning package - png file](Logo/JSLPlogo.png)
