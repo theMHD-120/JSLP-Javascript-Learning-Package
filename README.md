@@ -7,7 +7,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 
 # Package summary
 Learning javascript with the javascript codes :) <br />
-This package contains three chpters, six sections and fifteen parts. Read each part step by step (in numerical order) and try it yourself.
+This package contains three chpters, six sections and fifteen parts. Read each part (chapter-section-part) step by step (in numerical order) and try it yourself.
 
 ## Contents:
     Chapter #01: Basics of javascript (like another programming languages);
