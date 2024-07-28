@@ -9,8 +9,8 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 Learning javascript with the javascript codes :) <br />
 This package contains three chpters, six sections and fifteen parts.
 
-Contents:
-    <dot /> Chapter 1: Basics of javascript (like another programming languages);
+Contents: <br />
+    Chapter 1: Basics of javascript (like another programming languages);
         Section 1: data types, operators and conditional states;
         Section 2: functions, loops, events and try-catch;
     Chapter 2: Special and advanced contents of javascript;
