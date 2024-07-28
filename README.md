@@ -21,7 +21,7 @@ This package contains three chpters, six sections and fifteen parts.
     Chapter 3: Some good practices :);
         After finishing the chapters 1&2, you can check this practices;
 
-Prerequisites:
+## Prerequisites:
     Familiarity with:
         - HTML
         - Fundamental of computer and programming
