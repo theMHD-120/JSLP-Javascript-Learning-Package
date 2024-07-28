@@ -10,7 +10,7 @@ Learning javascript with the javascript codes :) <br />
 This package contains three chpters, six sections and fifteen parts.
 
 Contents:
-    . Chapter 1: Basics of javascript (like another programming languages);
+    <dot /> Chapter 1: Basics of javascript (like another programming languages);
         Section 1: data types, operators and conditional states;
         Section 2: functions, loops, events and try-catch;
     Chapter 2: Special and advanced contents of javascript;
