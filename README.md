@@ -23,12 +23,12 @@ Read each part (chapter -> section -> part) step by step (in numerical order) an
   - After finishing the chapters 1&2, you can check this practices;
 
 ## Prerequisites:
-    Familiarity with:
-        - HTML
-        - Fundamental of computer and programming
-    Better to be familiar with:
-        - CSS
-        - Basics of a programming language
+  - Familiarity with:
+      - HTML
+      - Fundamental of computer and programming
+  - Better to be familiar with:
+      - CSS
+      - Basics of a programming language
 
 ## Logo
 ![JSLP - javascript learning package - gif file](Logo/JSLPlogo.gif) <br />
