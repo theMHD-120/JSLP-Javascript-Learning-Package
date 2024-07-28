@@ -29,6 +29,6 @@ This package contains three chpters, six sections and fifteen parts.
             - CSS
             - Basics of a programming language
 
-![JSLP - javascript learning package - gif file](Logo/JSLPlogo.gif)
-
+## Logo
+![JSLP - javascript learning package - gif file](Logo/JSLPlogo.gif) <br />
 ||| JSLP - by theMHD |||
