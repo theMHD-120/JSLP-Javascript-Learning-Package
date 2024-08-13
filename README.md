@@ -3,7 +3,7 @@ Author:  seyed mahdi mahdavi mortazavi (theMHD)
 >>> JavaScript Learning Package - Summer 2023
 
 # JSLP-javascript-learning-package
-![JSLP - javascript learning package - png file](Logo/JSLPlogo.png)
+![JSLP - javascript learning package - png file](Images/JSLPlogo.png)
 
 # Package summary
 Learning javascript with the javascript codes :) <br />
@@ -34,5 +34,5 @@ Read each part (chapter -> section -> part) step by step (in numerical order) an
       - Basics of a programming language
 
 ## Logo
-![JSLP - javascript learning package - gif file](Logo/JSLPlogo.gif) <br />
+![JSLP - javascript learning package - gif file](Images/JSLPlogo.gif) <br />
 ||| JSLP - by theMHD |||
