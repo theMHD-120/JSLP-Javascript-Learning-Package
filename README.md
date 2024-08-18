@@ -10,7 +10,7 @@ Learning javascript with the javascript codes :) <br />
 This package contains three chpters, six sections and fifteen parts. <br />
 Read each part (chapter -> section -> part) step by step (in numerical order) and try it yourself.
 
-## Contents:
+## Contents
 - Chapter #01: Basics of javascript (like another programming languages)
   - Section 1: data types, operators and conditional states
   - Section 2: functions, loops, events and try-catch
@@ -24,7 +24,7 @@ Read each part (chapter -> section -> part) step by step (in numerical order) an
 - Chapter #03: Some good practices :)
   - After finishing the chapters 1&2, you can check this practices.
 
-## Prerequisites:
+## Prerequisites
   - Familiarity with:
       - HTML
       - Fundamental of computer and programming
