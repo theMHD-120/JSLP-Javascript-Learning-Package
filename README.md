@@ -1,5 +1,4 @@
-﻿||| In the name of Allah ||| <br/>
-Author:  seyed mahdi mahdavi mortazavi (theMHD)
+﻿### In the name of Allah
 >>> JavaScript Learning Package - Summer 2023
 
 # JSLP-javascript-learning-package
