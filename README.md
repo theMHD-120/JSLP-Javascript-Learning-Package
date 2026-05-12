@@ -34,4 +34,4 @@ Read each part (chapter -> section -> part) step by step (in numerical order) an
 
 ## Logo
 ![JSLP - javascript learning package - gif file](Images/JSLPlogo.gif) <br />
-||| JSLP - by theMHD |||
+### JSLP - by theMHD 
